@@ -1,3 +1,11 @@
 body {
     background-color: #000000;
+    overflow: hidden;
+}
+
+.imgs {
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+    transform: translateY(-1rem);
 }
