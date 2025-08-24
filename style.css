@@ -10,5 +10,13 @@ body {
     position: absolute;
     top: 0rem;
     left: 0rem;
+}
 
+.imgs2 {
+    object-fit: contain;
+    width: auto;
+    height: 95%;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
 }
