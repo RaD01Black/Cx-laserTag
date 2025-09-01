@@ -1,0 +1,21 @@
+:root {
+    --main-color: #E84481;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'GameOfSquids', sans-serif;
+    height: 100vh;
+    background: url(../imgs/backgroundgame.png);
+    user-select: none;
+    color: #fff;
+    overflow: hidden;
+  }
