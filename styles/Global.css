@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'GameOfSquids', sans-serif;
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
     background: url(../imgs/backgroundgame.png);
     user-select: none;
