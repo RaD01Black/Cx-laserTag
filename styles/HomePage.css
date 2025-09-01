@@ -1,5 +1,5 @@
 
-.imgs {
+.LeftVector {
     object-fit: contain;
     width: auto;
     height: 100%;
@@ -8,7 +8,7 @@
     left: 0rem;
 }
 
-.imgs2 {
+.ChracterRight {
     object-fit: contain;
     width: auto;
     height: 95%;
