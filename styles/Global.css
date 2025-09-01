@@ -12,7 +12,7 @@
     align-items: center;
     font-family: 'Roboto', sans-serif;
     height: 100vh;
-    background: url(../imgs/backgroundgame.png);
+    background: url(../imgs/bgHomePage.png) #000;
     user-select: none;
     color: #fff;
     overflow: hidden;

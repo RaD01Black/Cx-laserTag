@@ -1,0 +1,22 @@
+body {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.imgs {
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+
+.imgs2 {
+    object-fit: contain;
+    width: auto;
+    height: 95%;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+}
