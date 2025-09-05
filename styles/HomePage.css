@@ -16,7 +16,7 @@
     bottom: 0rem;
     right: 0rem;
     filter: drop-shadow(50px 9mm 18mm #39222b);
-    animation: shadowPulse 4s infinite ease-in-out;
+    animation: shadowPulse 2s infinite ease-in-out;
 }
 
 .LaserTagTextTop {
@@ -39,7 +39,7 @@
 
 @keyframes shadowPulse {
     0%   { filter: drop-shadow(50px 9mm 18mm #39222b); }
-    50%  { filter: drop-shadow(30px 11mm 20mm #39222b); }
+    50%  { filter: drop-shadow(30px 11mm 20mm #2f1c23); }
     100% { filter: drop-shadow(50px 9mm 18mm #39222b); }
 }
 
