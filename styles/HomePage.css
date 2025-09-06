@@ -44,7 +44,7 @@
 }
 
 .BttomDiVDetail {
-    position: relative; /* container for absolute children */
+    position: relative; 
   }
   
   .BttomDiVDetail svg {
@@ -64,4 +64,10 @@
     align-items: center;
     justify-content: center;
     color: white;        
-  }
+}
+
+.ServerDetail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
