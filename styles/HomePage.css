@@ -62,7 +62,8 @@
     z-index: 2;           
     display: flex;       
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 20px;
     color: white;        
 }
 
@@ -70,4 +71,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
+}
+
+.ServerDetail p {
+    opacity: 50%;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.ServerDetail h1 {
+    font-family: "Tomorrow", sans-serif;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.TextDetailServer {
+    max-width: 400px;
+    font-size: 14px;
 }
