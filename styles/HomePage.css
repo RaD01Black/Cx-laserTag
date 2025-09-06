@@ -43,31 +43,11 @@
     100% { filter: drop-shadow(50px 9mm 18mm #39222b); }
 }
 
-  .card {
+.BttomDiVDetail {
     position: relative;
-    width: 600px;
-    height: 120px;
-    border-radius: 2px;
-    background: rgba(20, 20, 20, 0.6); /* semi-transparent */
-    backdrop-filter: blur(12px); /* background blur */
-    overflow: hidden;
-  }
-  
-  /* glossy corner stroke */
-  .card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 2px;
-    background: linear-gradient(90deg, rgba(255,255,255,0.5), transparent 60%),
-                linear-gradient(180deg, rgba(255,255,255,0.5), transparent 60%),
-                linear-gradient(270deg, rgba(255,255,255,0.5), transparent 60%),
-                linear-gradient(360deg, rgba(255,255,255,0.5), transparent 60%);
-    background-repeat: no-repeat;
-    background-size: 50% 2px, 2px 50%, 50% 2px, 2px 50%;
-    background-position: top left, top right, bottom right, bottom left;
-    pointer-events: none;
-  }
-  
+}
 
+.BttomDiVDetail svg {
+    position: absolute;
+
+}
