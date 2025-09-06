@@ -43,6 +43,13 @@
     100% { filter: drop-shadow(50px 9mm 18mm #39222b); }
 }
 
+.BottomVector {
+    position: absolute;
+    bottom: 10px;
+    animation: floatAround 4s infinite ease-in-out;
+
+}
+
 .BttomDiVDetail {
     position: relative; 
   }
