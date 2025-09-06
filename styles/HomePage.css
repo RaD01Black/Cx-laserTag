@@ -45,9 +45,8 @@
 
 .BottomVector {
     position: absolute;
-    bottom: 10px;
+    bottom: 3vh;
     animation: floatAround 4s infinite ease-in-out;
-
 }
 
 .BttomDiVDetail {
