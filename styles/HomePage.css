@@ -167,6 +167,11 @@
     font-size: 15px;
   }
 
+  .PriceAmount span {
+    transform: translateY(12px) translateX(3px);
+    font-size: 14px;
+  }
+
   .TextPriceForCreate p {
     font-size: 12px;
     font-weight: 400;
