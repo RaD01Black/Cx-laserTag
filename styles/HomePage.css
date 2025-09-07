@@ -98,7 +98,8 @@
 }
 
 .CreateLobby {
-    position: relative;       
+    position: relative;     
+    cursor: pointer;  
   }
   
   .bg-image {
@@ -158,4 +159,15 @@
     position: absolute;
     display: flex;
     flex-direction: column;
+    left: 50px;
+  }
+
+  .PriceAmount {
+    display: flex;
+    font-size: 15px;
+  }
+
+  .TextPriceForCreate p {
+    font-size: 12px;
+    font-weight: 400;
   }
