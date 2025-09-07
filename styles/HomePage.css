@@ -96,3 +96,30 @@
     max-width: 400px;
     font-size: 14px;
 }
+
+.CreateLobby {
+    position: relative;       
+  }
+  
+  .bg-image {
+    width: 100%;
+    height: 100%;
+    display: block;           /* removes inline gap */
+    position: relative;
+    z-index: 1;               /* background layer */
+  }
+  
+  .kossher {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;               /* text above image */
+    display: flex;            /* centers text */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
