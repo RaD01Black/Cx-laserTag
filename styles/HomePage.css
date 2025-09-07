@@ -109,7 +109,7 @@
     z-index: 1;              
   }
   
-  .kossher {
+  .CreateLobyText {
     position: absolute;
     top: 0;
     left: 0;
@@ -117,9 +117,23 @@
     height: 100%;
     z-index: 2;              
     display: flex;          
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: start;
     color: white;
-    text-align: center;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 30px;
+    gap: 4px;
   }
-  
+
+  .CreateLobyText h1 {
+    font-weight: 900;
+    font-size: 46px;
+  }
+
+  .CreateLobyText p {
+    font-size: 13px;
+    max-width: 85%;
+    transform: translateX(5px);
+  }
