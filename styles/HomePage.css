@@ -96,6 +96,11 @@
     max-width: 400px;
     font-size: 14px;
 }
+.FirstPartHomePage {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
 
 .CreateLobby {
     position: relative;     
@@ -216,22 +221,18 @@
   .CreateLobby:hover .priceCreate {
     transform: translateX(5px);
   }
-
-
-
-
-
-
-
-
-
-
-  
+ 
 .JoinLobby {
     position: relative;     
     cursor: pointer;  
     transition: transform 0.3s ease; 
     overflow: hidden;
+background: rgba(0, 0, 0, 0.45);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+    border-radius: 6px;
   }
 
   .JoinLobby:hover {
