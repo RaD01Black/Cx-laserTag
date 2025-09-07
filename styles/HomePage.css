@@ -140,7 +140,7 @@
 
   .priceCreate {
     position: absolute;
-    top: 10rem;
+    top: 7rem;
     right: 0;
     z-index: 2;              
     display: flex;          
@@ -152,4 +152,10 @@
     padding-top: 20px;
     padding-left: 30px;
     gap: 4px;
+  }
+
+  .TextPriceForCreate {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
   }
