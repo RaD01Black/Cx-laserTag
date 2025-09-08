@@ -43,6 +43,15 @@
     100% { filter: drop-shadow(50px 9mm 18mm #39222b); }
 }
 
+.AllDetailDivs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    bottom: 9vh;
+    left: 10vw;
+}
+
 .BottomVector {
     position: absolute;
     bottom: 3vh;
