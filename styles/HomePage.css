@@ -322,3 +322,47 @@ backdrop-filter: blur(20px);
   .JoinLobby:hover .priceJoin {
     transform: translateX(5px);
   }
+
+  .LeaderBoardPageDiv {
+    position: relative;
+    width: 22.5rem;
+    height: 100%; /* adjust to your layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center; /* centers text */
+    background: rgba(0, 0, 0, 0.45);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+    border-radius: 6px;
+}
+
+.LeaderBoardBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    z-index: 0;
+}
+
+.LeaderBoardText {
+    position: relative;
+    z-index: 1; /* ensures text is above */
+    color: white; /* visible over image */
+}
+
+.LeaderBoardText h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.LeaderBoardText p {
+    font-size: 1.2rem;
+    opacity: 0.9; /* slightly softer */
+}
