@@ -49,6 +49,11 @@
   gap: 15px;
 }
 
+.userAndLeaderboardDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 .AllDetailDivs {
     display: flex;
     flex-direction: column;
