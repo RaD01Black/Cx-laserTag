@@ -43,6 +43,12 @@
     100% { filter: drop-shadow(50px 9mm 18mm #39222b); }
 }
 
+.TopPagesDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
 .AllDetailDivs {
     display: flex;
     flex-direction: column;
