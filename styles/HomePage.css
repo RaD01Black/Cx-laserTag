@@ -375,3 +375,20 @@ backdrop-filter: blur(20px);
     font-size: 13px;
     opacity: 0.9; /
 }
+
+.ImageUSerSelf {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BgSteamUser {
+  position: absolute;
+}
+
+.imageSteamUser {
+  width: 62px;
+  height: 62px;
+  border-radius: 100%;
+}
