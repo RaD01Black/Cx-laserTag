@@ -437,6 +437,8 @@ transform: scale(1.01);
 .ImageUSerSelf {
   position: absolute;
   display: flex;
+  margin-top: 5px;
+  margin-left: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -454,5 +456,8 @@ transform: scale(1.01);
 .UserNameDetaildiv {
   display: flex;
   justify-content: center;
+  position: absolute;
+  top: 5rem;
+
 
 }
