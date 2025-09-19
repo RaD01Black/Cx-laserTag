@@ -325,12 +325,12 @@ backdrop-filter: blur(20px);
   .LeaderBoardPageDiv {
     position: relative;
     width: 22.5rem;
-    height: 100%; /* adjust to your layout */
+    height: 100%; 
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    text-align: center; /* centers text */
+    text-align: center; 
     background: rgba(0, 0, 0, 0.45);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -360,8 +360,8 @@ backdrop-filter: blur(20px);
     position: absolute;
     top: 30px;
     left: 30px;
-    z-index: 1; /* ensures text is above */
-    color: white; /* visible over image */
+    z-index: 1; 
+    color: white; 
     text-align: left;
 }
 
