@@ -376,8 +376,66 @@ backdrop-filter: blur(20px);
     opacity: 0.9; /
 }
 
-.ImageUSerSelf {
+
+
+
+
+
+.SteamUserPageDiv {
   position: relative;
+  width: 22.5rem;
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center; 
+  background: rgba(0, 0, 0, 0.45);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+  border-radius: 6px;
+transition: transform 0.3s ease; 
+cursor: pointer;
+}
+
+.SteamUserPageDiv:hover {
+transform: scale(1.01);
+}
+
+
+.SteamUserBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  z-index: 0;
+}
+
+.SteamUserText {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 1; 
+  color: white; 
+}
+
+.SteamUserText h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.SteamUserText p {
+  font-size: 13px;
+  opacity: 0.9; /
+}
+
+.ImageUSerSelf {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,4 +449,10 @@ backdrop-filter: blur(20px);
   width: 62px;
   height: 62px;
   border-radius: 100%;
+}
+
+.UserNameDetaildiv {
+  display: flex;
+  justify-content: center;
+
 }
