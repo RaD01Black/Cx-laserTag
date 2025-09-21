@@ -462,8 +462,85 @@ transform: scale(1.01);
 }
 
 .UserNameDetaildiv p {
-  font-size: 11px;
+  font-size: 14px;
   color: #909094;
-  transform: translateY(4.7px);
+  transform: translateY(3.4px);
   margin-left: 3px;
+}
+
+.AllDTPlayer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transform: translateY(7.3rem);
+}
+
+.ReDKdDiv {
+  position: relative;
+  width: 80px;   /* adjust as needed */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px; /* optional styling */
+}
+
+
+.GreenWinDiv {
+  position: absolute;
+  transform: translateY(-1.5px) translateX(4.27rem);
+  width: 100px;   /* adjust as needed */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px; /* optional styling */
+}
+
+.ReDKdBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* makes it behave like a background */
+  z-index: 0;
+}
+
+.ReDKdContent {
+  position: relative;
+  z-index: 1; /* ensures content is on top */
+  color: white; /* make text visible */
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+
+.GreenWinBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* makes it behave like a background */
+  z-index: 0;
+}
+
+.GreenWinContent {
+  position: relative;
+  z-index: 1; /* ensures content is on top */
+  color: white; /* make text visible */
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
