@@ -477,26 +477,26 @@ transform: scale(1.01);
 
 .ReDKdDiv {
   position: relative;
-  width: 80px;   /* adjust as needed */
+  width: 80px;  
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border-radius: 10px; /* optional styling */
+  border-radius: 10px; 
 }
 
 
 .GreenWinDiv {
   position: absolute;
   transform: translateY(-1.5px) translateX(4.27rem);
-  width: 100px;   /* adjust as needed */
+  width: 100px;  
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border-radius: 10px; /* optional styling */
+  border-radius: 10px; 
 }
 
 .ReDKdBg {
@@ -505,14 +505,14 @@ transform: scale(1.01);
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain; /* makes it behave like a background */
+  object-fit: contain; 
   z-index: 0;
 }
 
 .ReDKdContent {
   position: relative;
-  z-index: 1; /* ensures content is on top */
-  color: white; /* make text visible */
+  z-index: 1; 
+  color: white; 
   font-weight: bold;
   text-align: center;
   font-size: 1.2rem;
@@ -521,22 +521,20 @@ transform: scale(1.01);
   gap: 5px;
 }
 
-
-
 .GreenWinBg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain; /* makes it behave like a background */
+  object-fit: contain; 
   z-index: 0;
 }
 
 .GreenWinContent {
   position: relative;
-  z-index: 1; /* ensures content is on top */
-  color: white; /* make text visible */
+  z-index: 1; 
+  color: white; 
   font-weight: bold;
   text-align: center;
   font-size: 1.2rem;
