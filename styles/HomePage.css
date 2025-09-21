@@ -457,7 +457,13 @@ transform: scale(1.01);
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 5rem;
+  top: 5.4rem;
+  flex-direction: row;
+}
 
-
+.UserNameDetaildiv p {
+  font-size: 11px;
+  color: #909094;
+  transform: translateY(4.7px);
+  margin-left: 3px;
 }
