@@ -1,13 +1,7 @@
-const pages = ["home", "about", "contact"];
+function pageHandler(page) {
+  let pages = ["homepage", "SettingLobby", "adminPlan"];
 
-function showPage(id) {
-  for (let p of pages) {
-    document.getElementById(p).style.display = (p === id ? "block" : "none");
-  }
+  pages.forEach(p => {
+      document.getElementById(p).style.display = (p === page) ? "flex" : "none";
+  });
 }
-
-document.getElementById("nav-home").onclick = () => showPage("home");
-document.getElementById("nav-about").onclick = () => showPage("about");
-document.getElementById("nav-contact").onclick = () => showPage("contact");
-
-showPage("home");

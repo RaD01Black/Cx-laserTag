@@ -6,11 +6,12 @@
     <title>Cx-LaserTag V1</title>
     <link rel="stylesheet" href="./styles/Global.css">
     <link rel="stylesheet" href="./styles/HomePage.css">
+    <link rel="stylesheet" href="styles/SettingLobby.css">
 </head>
 <body>
 
 
-    <div class="HomePage">
+    <div id="homepage" class="HomePage">
         <img class="ChracterRight" src="./imgs/ChracterRight.png" alt="">
         <img class="LaserTagTextTop" src="./imgs/laserTagText.png" alt="">
         <div class="DotDiv">
@@ -60,7 +61,7 @@
     
             <div class="TopPagesDiv">
                 <div class="FirstPartHomePage">
-                    <div class="CreateLobby">
+                    <div class="CreateLobby" onclick="pageHandler('SettingLobby')">
                         <img src="./imgs/CreateLobbyImage.png" alt="" class="bg-image">
                         <div class="CreateLobyText">
                             <h1>Create Lobby</h1>
@@ -173,6 +174,20 @@
                         </div>
                 </div>
         </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="SettingLobby" class="SettingLobby">
+        <h1>Kos</h1>
     </div>
 
 
