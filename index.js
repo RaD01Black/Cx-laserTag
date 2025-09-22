@@ -10,5 +10,4 @@ document.getElementById("nav-home").onclick = () => showPage("home");
 document.getElementById("nav-about").onclick = () => showPage("about");
 document.getElementById("nav-contact").onclick = () => showPage("contact");
 
-// ✅ Start with home page visible
 showPage("home");
