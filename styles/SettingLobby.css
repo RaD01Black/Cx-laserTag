@@ -1,5 +1,5 @@
 .SettingLobby {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
@@ -17,5 +17,68 @@
 .CharachterCenter {
     position: absolute;
     bottom: 0rem;
-    width: 77rem;
+    width: 66vw;
 }
+
+.DDLINE {
+    position: absolute;
+}
+
+.crescent {
+    position: relative;
+    width: 500px;
+    height: 800px;
+    border-radius: 50% / 60%;
+    background: transparent;
+    animation: pulseGlow 2.5s ease-in-out infinite;
+    border-left: 32px solid white;
+    transform: rotate(160deg);
+    margin-top: 28vh;
+    margin-left: 7vw;
+    filter: drop-shadow(0 0 1.85rem #00C2CB);
+  }
+  
+  .crescent::before {
+    content: "";
+    position: absolute;
+    inset: -40px; 
+    border-left: 32px solid #74daf9;
+    border-radius: 50% / 60%;
+    transform: rotate(0deg);
+    filter: blur(40px);
+    opacity: 0.9;
+  }
+
+  .crescent2 {
+    position: relative;
+    width: 500px;
+    height: 800px;
+    border-radius: 50% / 60%;
+    background: transparent;
+    animation: pulseGlow 2.5s ease-in-out infinite;
+    border-left: 32px solid white;
+    transform: rotate(20deg);
+    margin-top: 20vh;
+    margin-right: 1vw;
+    filter: drop-shadow(0 0 1.85rem #00C2CB);
+  }
+  
+  .crescent2::before {
+    content: "";
+    position: absolute;
+    inset: -40px; 
+    border-left: 32px solid #74daf9;
+    border-radius: 50% / 60%;
+    transform: rotate(0deg);
+    filter: blur(40px);
+    opacity: 0.9;
+  }
+  
+  @keyframes pulseGlow {
+    0%, 100% {
+      filter: drop-shadow(0 0 1.85rem #00C2CB);
+    }
+    50% {
+      filter: drop-shadow(0 0 3.7rem #00E5F5);
+    }
+  }
