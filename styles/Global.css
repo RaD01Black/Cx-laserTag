@@ -43,7 +43,7 @@
   }
   
   .button:before {
-    border: 1px solid #f0eeefd8;
+    border: 1px solid #f0eeef94;
     transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
       transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
   }
