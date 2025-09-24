@@ -58,8 +58,7 @@
     animation: pulseGlow 2.5s ease-in-out infinite;
     border-left: 32px solid white;
     transform: rotate(20deg);
-    bottom: -20rem;
-    
+    margin-top: 20vh;
     margin-right: 1vw;
     filter: drop-shadow(0 0 1.85rem #00C2CB);
   }
