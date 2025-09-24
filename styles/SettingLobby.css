@@ -82,3 +82,12 @@
       filter: drop-shadow(0 0 3.7rem #00E5F5);
     }
   }
+
+.LefPartDivSettiig {
+  background-color: #00C2CB;
+}
+.TopTextMapSelector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
