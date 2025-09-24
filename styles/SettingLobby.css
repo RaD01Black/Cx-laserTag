@@ -85,6 +85,9 @@
 
 .LefPartDivSettiig {
   background-color: #00C2CB;
+  width: 27rem;
+  position: absolute;
+  right: 6rem;
 }
 .TopTextMapSelector {
   display: flex;
