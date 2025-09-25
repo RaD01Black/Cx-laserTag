@@ -159,8 +159,38 @@
   font-weight: 300;
 }
 
-.GreenSelectMap {
+.GreenSelectMap,
+.RedSelectMap {
   display: none;
+  opacity: 0;
+  transform: translateX(20px); 
+}
+.GreenSelectMap.active {
+  display: flex;
+}
+
+.RedSelectMap.active {
+  display: flex;
+}
+
+.GreenSelectMap.active,
+.RedSelectMap.active {
+  display: flex;
+  animation: fadeInLeft 0.4s ease forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.GreenSelectMap {
   height: 6.4rem;
   width: 6px;
   background-color: #00FF77;
@@ -173,7 +203,6 @@
 }
 
 .RedSelectMap {
-  display: flex;
   height: 6.4rem;
   width: 6px;
   background-color: #F1224C;
