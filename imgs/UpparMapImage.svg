@@ -1,0 +1,18 @@
+<svg width="528" height="131" viewBox="0 0 528 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-74.5" y="-74.5" width="677" height="280"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(37.5px);clip-path:url(#bgblur_0_2185_10753_clip_path);height:100%;width:100%"></div></foreignObject><g data-figma-bg-blur-radius="75">
+<rect x="1.25" y="1.25" width="525.5" height="128.5" rx="8.75" stroke="url(#paint0_linear_2185_10753)" stroke-width="1.5"/>
+<rect x="1.25" y="1.25" width="525.5" height="128.5" rx="8.75" stroke="url(#paint1_radial_2185_10753)" stroke-width="1.5"/>
+<rect x="1.25" y="1.25" width="525.5" height="128.5" rx="8.75" stroke="black" stroke-opacity="0.2" stroke-width="1.5"/>
+</g>
+<defs>
+<clipPath id="bgblur_0_2185_10753_clip_path" transform="translate(74.5 74.5)"><rect x="1.25" y="1.25" width="525.5" height="128.5" rx="8.75"/>
+</clipPath><linearGradient id="paint0_linear_2185_10753" x1="352.11" y1="25.0399" x2="654.587" y2="176.422" gradientUnits="userSpaceOnUse">
+<stop stop-color="#292929"/>
+<stop offset="1" stop-color="#523E35" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="paint1_radial_2185_10753" cx="0" cy="0" r="1" gradientTransform="matrix(411.437 -419.212 -188.739 298.383 -190.133 371.761)" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
