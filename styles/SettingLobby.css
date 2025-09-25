@@ -105,7 +105,7 @@
 
 
 .MapSelectDiv {
-  position: relative;   /* makes it a stacking container */
+  position: relative;  
   width: 27rem;
   height: 6.7rem;
   cursor: pointer;
@@ -121,20 +121,20 @@
 }
 
 .MapImage {
-  z-index: 0; /* bottom layer */
+  z-index: 0;  
   border-radius: 8px;
 }
 
 .UpperMapImage {
-  z-index: 1; /* middle layer */
+  z-index: 1; 
 }
 
 .MapDetail {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* center it */
-  z-index: 2; /* top layer */
+  transform: translate(-50%, -50%); 
+  z-index: 2;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
