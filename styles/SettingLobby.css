@@ -96,11 +96,17 @@
   align-items: center;
 }
 
+.MapdetailAllDiv {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .MapSelectDiv {
   position: relative;   /* makes it a stacking container */
   width: 27rem;
   height: 6.7rem;
+  cursor: pointer;
 }
 
 .MapSelectDiv img {
@@ -112,9 +118,9 @@
   object-fit: cover;
 }
 
-
 .MapImage {
   z-index: 0; /* bottom layer */
+  border-radius: 8px;
 }
 
 .UpperMapImage {
