@@ -160,6 +160,7 @@
 }
 
 .GreenSelectMap {
+  display: none;
   height: 6.4rem;
   width: 6px;
   background-color: #00FF77;
@@ -172,13 +173,14 @@
 }
 
 .RedSelectMap {
+  display: flex;
   height: 6.4rem;
   width: 6px;
-  background-color: #00FF77;
+  background-color: #F1224C;
   position: absolute;
   right: .5px;
   border-bottom-right-radius: 100%;
   border-top-right-radius: 100%;
-  -webkit-box-shadow: -28px 0px 50px 23px rgba(0,255,119,0.52); 
-  box-shadow: -28px 0px 50px 23px rgba(0,255,119,0.52);
+  -webkit-box-shadow: -28px 0px 50px 23px rgba(255, 0, 0, 0.52); 
+  box-shadow: -28px 0px 50px 23px rgba(255, 0, 0, 0.52);
 }
