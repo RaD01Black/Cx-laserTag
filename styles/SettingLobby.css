@@ -84,7 +84,6 @@
   }
 
 .LefPartDivSettiig {
-  background-color: #00C2CB;
   width: 27rem;
   position: absolute;
   right: 6rem;
@@ -95,4 +94,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.MapSelectDiv img{
+  width: 27rem;
+  height: 6.7rem;
 }
