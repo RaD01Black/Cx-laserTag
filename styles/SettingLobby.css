@@ -125,6 +125,10 @@
   object-fit: cover;
 }
 
+.MapSelectDiv:active {
+  transform: translate(1px, 1px);
+}
+
 .MapImage {
   z-index: 0;  
   border-radius: 8px;
@@ -156,13 +160,25 @@
 }
 
 .GreenSelectMap {
-  height: 6.3rem;
-  width: 5px;
+  height: 6.4rem;
+  width: 6px;
   background-color: #00FF77;
   position: absolute;
   right: .5px;
   border-bottom-right-radius: 100%;
   border-top-right-radius: 100%;
-  -webkit-box-shadow: -28px 0px 50px 26px rgba(0,255,119,0.52); 
-  box-shadow: -28px 0px 50px 26px rgba(0,255,119,0.52);
+  -webkit-box-shadow: -28px 0px 50px 23px rgba(0,255,119,0.52); 
+  box-shadow: -28px 0px 50px 23px rgba(0,255,119,0.52);
+}
+
+.RedSelectMap {
+  height: 6.4rem;
+  width: 6px;
+  background-color: #00FF77;
+  position: absolute;
+  right: .5px;
+  border-bottom-right-radius: 100%;
+  border-top-right-radius: 100%;
+  -webkit-box-shadow: -28px 0px 50px 23px rgba(0,255,119,0.52); 
+  box-shadow: -28px 0px 50px 23px rgba(0,255,119,0.52);
 }
