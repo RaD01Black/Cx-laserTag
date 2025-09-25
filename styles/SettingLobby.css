@@ -154,5 +154,11 @@
 }
 
 .GreenSelectMap {
-  
+  height: 6.3rem;
+  width: 4px;
+  background-color: #00C2CB;
+  position: absolute;
+  right: .5px;
+  border-bottom-right-radius: 100%;
+  border-top-right-radius: 100%;
 }
