@@ -109,6 +109,9 @@
   width: 27rem;
   height: 6.7rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .MapSelectDiv img {
@@ -131,11 +134,21 @@
 
 .MapDetail {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
+  left: 2rem;
   z-index: 2;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.MapDetail h1 {
+  font-size: 21px;
+}
+
+.MapDetail p {
+  font-size: 12px;
+  font-weight: 300;
 }
