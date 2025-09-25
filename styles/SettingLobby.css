@@ -178,7 +178,7 @@
   width: 6px;
   background-color: #F1224C;
   position: absolute;
-  right: .5px;
+  right: 0px;
   border-bottom-right-radius: 100%;
   border-top-right-radius: 100%;
   -webkit-box-shadow: -28px 0px 50px 23px rgba(255, 0, 0, 0.52); 
