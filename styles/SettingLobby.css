@@ -200,6 +200,7 @@
   border-top-right-radius: 100%;
   -webkit-box-shadow: -28px 0px 50px 23px rgba(0,255,119,0.52); 
   box-shadow: -28px 0px 50px 23px rgba(0,255,119,0.52);
+  transform: translateX(.5px) translateX(.2px) !important;
 }
 
 .RedSelectMap {
@@ -212,4 +213,5 @@
   border-top-right-radius: 100%;
   -webkit-box-shadow: -28px 0px 50px 23px rgba(255, 0, 0, 0.52); 
   box-shadow: -28px 0px 50px 23px rgba(255, 0, 0, 0.52);
+  transform: translateX(.5px) translateX(.2px) !important;
 }
