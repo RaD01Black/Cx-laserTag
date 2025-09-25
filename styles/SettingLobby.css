@@ -112,6 +112,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .MapSelectDiv img {
@@ -155,10 +157,12 @@
 
 .GreenSelectMap {
   height: 6.3rem;
-  width: 4px;
-  background-color: #00C2CB;
+  width: 5px;
+  background-color: #00FF77;
   position: absolute;
   right: .5px;
   border-bottom-right-radius: 100%;
   border-top-right-radius: 100%;
+  -webkit-box-shadow: -28px 0px 50px 26px rgba(0,255,119,0.52); 
+  box-shadow: -28px 0px 50px 26px rgba(0,255,119,0.52);
 }
