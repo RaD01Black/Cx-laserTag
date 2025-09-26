@@ -195,9 +195,15 @@
 }
 
 .CreateLobbyNewDiv {
-  background: #ff1a1a26;
+  background: #ff1a1a13;
   position: absolute;
   right: 6rem;
   bottom: 4rem;
-  padding: 20px 70px;
+  padding: 10px 15px;
+}
+
+.InsideCreateLobbyNew {
+  background: #FF1A1A;
+  background: linear-gradient(100deg,rgba(255, 26, 26, 1) 50%, rgba(153, 16, 16, 1) 100%);
+  padding: 12px 50px;
 }
