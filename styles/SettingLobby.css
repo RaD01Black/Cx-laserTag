@@ -200,10 +200,17 @@
   right: 6rem;
   bottom: 4rem;
   padding: 10px 15px;
+  cursor: pointer;
 }
 
 .InsideCreateLobbyNew {
   background: #FF1A1A;
   background: linear-gradient(100deg,rgba(255, 26, 26, 1) 50%, rgba(153, 16, 16, 1) 100%);
-  padding: 12px 50px;
+  padding: 13px 55px;
+}
+
+.InsideCreateLobbyNew p {
+  font-family: "Inter", sans-serif;
+  font-family: 900;
+  font-size: 14px;
 }
