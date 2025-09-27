@@ -36,9 +36,45 @@ function pageHandler(page) {
 
     input.addEventListener("focus", () => {
       container.classList.add("active");
-      whiteLine.style.transform = "translateX(50px)";
+      whiteLine.style.transform = "translateX(60px)";
     });
 
+    input.addEventListener("blur", () => {
+      container.classList.remove("active");
+      whiteLine.style.transform = "translateX(0px)";
+    });
+  });
+  document.querySelectorAll(".input-container.dropdown").forEach(container => {
+    const input     = container.querySelector("input");
+    const whiteLine = container.querySelector(".WhitlineBottomInput");
+    const menu      = container.querySelector(".dropdown-menu");
+
+    // open/close on clicking the whole div
+    container.addEventListener("click", () => {
+      container.classList.toggle("open");
+    });
+
+    // select option
+    menu.querySelectorAll("li").forEach(item => {
+      item.addEventListener("click", (e) => {
+        e.stopPropagation();
+        input.value = item.dataset.value;
+        container.classList.remove("open");
+      });
+    });
+
+    // close if click outside
+    document.addEventListener("click", (e) => {
+      if (!container.contains(e.target)) {
+        container.classList.remove("open");
+      }
+    });
+
+    // scale + white line on focus/blur
+    input.addEventListener("focus", () => {
+      container.classList.add("active");
+      whiteLine.style.transform = "translateX(50px)";
+    });
     input.addEventListener("blur", () => {
       container.classList.remove("active");
       whiteLine.style.transform = "translateX(0px)";

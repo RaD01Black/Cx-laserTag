@@ -115,6 +115,7 @@
   align-items: center;
   overflow: hidden;
   border-radius: 8px;
+  transition: transform 0.5s ease; 
 }
 
 .MapSelectDiv img {
@@ -127,7 +128,7 @@
 }
 
 .MapSelectDiv:active {
-  transform: translate(1px, 1px);
+  transform: scale(1.05);
 }
 
 .MapImage {
@@ -271,7 +272,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: 2rem;
+  left: 6rem;
   gap: 2rem;
 }
 
@@ -287,7 +288,7 @@
   align-items: center;
   color: #fff;
   height: 55px;
-  width: 390px;
+  width: 420px;
   background: url("../imgs/InputBgDiv.png") no-repeat center;
   background-size: cover;
   transition: transform 0.2s ease;
@@ -333,3 +334,53 @@
   transition: transform 0.4s ease; 
   left: 1rem;
 }
+
+    /* arrow */
+    .arrow {
+      margin-left: auto;
+      margin-right: 12px;
+      font-size: 14px;
+      transition: transform 0.3s ease;
+    }
+    .dropdown.open .arrow {
+      transform: rotate(180deg);
+    }
+
+    /* dropdown menu */
+    .dropdown-menu {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: calc(100% + 6px);
+      background: rgba(106, 106, 106, 0.19);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(19.1px);
+      -webkit-backdrop-filter: blur(19.1px);
+      list-style: none;
+      margin: 0;
+      padding: 6px 0;
+      border-radius: 6px;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transform: translateY(-6px);
+      transition: opacity 0.25s ease, transform 0.25s ease, max-height 0.35s ease;
+      z-index: 50;
+    }
+
+    .dropdown-menu li {
+      padding: 10px 16px;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .dropdown-menu li:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .dropdown.open .dropdown-menu {
+      max-height: 220px;
+      opacity: 1;
+      transform: translateY(0);
+    }
