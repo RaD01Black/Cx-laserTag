@@ -341,7 +341,6 @@
   left: 1rem;
 }
 
-/* arrow */
 .arrow {
   margin-left: auto;
   margin-right: 12px;
@@ -352,7 +351,6 @@
   transform: rotate(180deg);
 }
 
-/* dropdown menu */
 .dropdown-menu {
   position: absolute;
   left: 0;
@@ -371,7 +369,7 @@
   opacity: 0;
   transform: translateY(-6px);
   transition: opacity 0.25s ease, transform 0.25s ease, max-height 0.35s ease;
-  z-index: 9999; /* همیشه بالاتر از همه */
+  z-index: 9999; 
 }
 
 .dropdown-menu li {
