@@ -272,6 +272,13 @@
   flex-direction: column;
   position: absolute;
   left: 2rem;
+  gap: 2rem;
+}
+
+.FirstsInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .input-container {
@@ -285,6 +292,7 @@
   background-size: cover;
   transition: transform 0.2s ease;
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 .input-container.active {

@@ -29,14 +29,18 @@ function pageHandler(page) {
       div.querySelector(".RedSelectMap").classList.remove("active");
     });
   });
+  
+  document.querySelectorAll(".input-container").forEach(container => {
+    const input = container.querySelector("input");
+    const whiteLine = container.querySelector(".WhitlineBottomInput");
 
-  const input = document.getElementById("lobby");
-  const box = document.getElementById("inputBox");
+    input.addEventListener("focus", () => {
+      container.classList.add("active");
+      whiteLine.style.transform = "translateX(50px)";
+    });
 
-  input.addEventListener("focus", () => {
-    box.classList.add("active");
-  });
-
-  input.addEventListener("blur", () => {
-    box.classList.remove("active");
+    input.addEventListener("blur", () => {
+      container.classList.remove("active");
+      whiteLine.style.transform = "translateX(0px)";
+    });
   });
