@@ -83,7 +83,7 @@
     }
   }
 
-.LefPartDivSettiig {
+.RightPartDivSettiig {
   width: 27rem;
   position: absolute;
   right: 6rem;
@@ -224,8 +224,17 @@
   padding: 13px 55px;
   display: flex;
   justify-content: center;
-  transition: background 0.4s ease; /* smooth bg change */
+  transition: background 1s ease; /* smooth bg change */
 }
+
+.CreateLobbyNewDiv:hover .InsideCreateLobbyNew {
+  background: linear-gradient(
+    100deg,
+    rgba(200, 18, 18, 1) 50%,
+    rgba(120, 10, 10, 1) 100%
+  ); /* darker */
+}
+
 
 .InsideCreateLobbyNew p {
   font-family: "Inter", sans-serif;
