@@ -224,7 +224,7 @@
   padding: 13px 55px;
   display: flex;
   justify-content: center;
-  transition: background 1s ease; /* smooth bg change */
+  transition: background 1s ease; 
 }
 
 .CreateLobbyNewDiv:hover .InsideCreateLobbyNew {
@@ -232,7 +232,7 @@
     100deg,
     rgba(200, 18, 18, 1) 50%,
     rgba(120, 10, 10, 1) 100%
-  ); /* darker */
+  ); 
 }
 
 
@@ -248,7 +248,7 @@
   height: 2px;
   background: linear-gradient(270deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.812) 50%, rgba(255, 255, 255, 0) 100%);
   position: absolute;
-  transition: transform 0.4s ease; /* smooth animation */
+  transition: transform 0.4s ease; 
 }
 
 .WhitlineTop {
@@ -259,11 +259,17 @@
   bottom: 0;
 }
 
-/* Hover effect */
 .CreateLobbyNewDiv:hover .WhitlineTop {
-  transform: translateX(40px); /* move right */
+  transform: translateX(40px); 
 }
 
 .CreateLobbyNewDiv:hover .WhitlineBottom {
-  transform: translateX(-40px); /* move left */
+  transform: translateX(-40px); 
+}
+
+.LeftPartSettingMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 2rem;
 }
