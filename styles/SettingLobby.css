@@ -273,3 +273,38 @@
   position: absolute;
   left: 2rem;
 }
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 20px;
+  color: #fff;
+  min-width: 320px;
+  background: url("../imgs/InputBgDiv.png") no-repeat center;
+  background-size: cover;
+  transition: transform 0.2s ease;
+}
+
+.input-container.active {
+  transform: scale(1.01);
+}
+
+.input-container input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.input-container span {
+  margin-left: 16px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.LineLittWhite {
+  
+}

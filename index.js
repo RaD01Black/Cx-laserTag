@@ -29,3 +29,14 @@ function pageHandler(page) {
       div.querySelector(".RedSelectMap").classList.remove("active");
     });
   });
+
+  const input = document.getElementById("lobby");
+  const box = document.getElementById("inputBox");
+
+  input.addEventListener("focus", () => {
+    box.classList.add("active");
+  });
+
+  input.addEventListener("blur", () => {
+    box.classList.remove("active");
+  });
