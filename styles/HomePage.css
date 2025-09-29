@@ -591,3 +591,11 @@ transform: scale(1.01);
   box-shadow: 0px 0px 50px 5px rgba(255,26,26,0.6);
 }
 
+.BlueLineCorner {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0px;
+  background: #2180FE;
+background: linear-gradient(270deg,rgba(33, 128, 254, 0) 0%, rgba(33, 128, 254, 1) 50%, rgba(33, 128, 254, 0) 100%);
+}
