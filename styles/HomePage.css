@@ -260,7 +260,7 @@
 .JoinLobby {
     position: relative;     
     cursor: pointer;  
-    transition: transform 0.3s ease; 
+    transition: all 0.3s ease; 
 background: rgba(0, 0, 0, 0.45);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -271,6 +271,42 @@ backdrop-filter: blur(20px);
 
   .JoinLobby:hover {
     transform: scale(1.01);
+  }
+
+  .BlueLineCorner {
+    width: 2px;
+    height: 50%;
+    position: absolute;
+    top: 2rem;
+    right: 0px;
+    z-index: 99;
+    background: #2181fee6;
+    background: linear-gradient(0deg,rgba(33, 128, 254, 0) 0%, rgba(33, 129, 254, 0.9) 50%, rgba(33, 128, 254, 0) 100%);
+    -webkit-box-shadow: 0px 0px 40px 5px #2181fe9f; 
+    box-shadow: 0px 0px 40px 5px #2181fe9f;
+    transition: all 0.30s ease;
+  }
+  
+  .BlueLineCornerBottom {
+    width: 2px;
+    height: 50%;
+    position: absolute;
+    bottom:  2rem;
+    left: 0px;
+    z-index: 99;
+    background: #2181fee6;
+    background: linear-gradient(0deg,rgba(33, 128, 254, 0) 0%, rgba(33, 129, 254, 0.9) 50%, rgba(33, 128, 254, 0) 100%);
+    -webkit-box-shadow: 0px 0px 50px 5px #2181fe9f; 
+    box-shadow: 0px 0px 50px 5px #2181fe9f;
+    transition: bottom 0.30s ease;
+  }
+  
+  .JoinLobby:hover .BlueLineCorner {
+    top: 4rem;
+  }
+
+  .JoinLobby:hover .BlueLineCornerBottom {
+    bottom: 4rem;
   }
   
   .bg-image {
@@ -590,28 +626,3 @@ transform: scale(1.01);
   box-shadow: 0px 0px 50px 5px rgba(255,26,26,0.6);
 }
 
-.BlueLineCorner {
-  width: 2px;
-  height: 50%;
-  position: absolute;
-  top: 2rem;
-  right: 0px;
-  z-index: 99;
-  background: #2181fee6;
-  background: linear-gradient(0deg,rgba(33, 128, 254, 0) 0%, rgba(33, 129, 254, 0.9) 50%, rgba(33, 128, 254, 0) 100%);
-  -webkit-box-shadow: 0px 0px 40px 5px #2181fe9f; 
-  box-shadow: 0px 0px 40px 5px #2181fe9f;
-}
-
-.BlueLineCornerBottom {
-  width: 2px;
-  height: 50%;
-  position: absolute;
-  bottom:  2rem;
-  left: 0px;
-  z-index: 99;
-  background: #2181fee6;
-  background: linear-gradient(0deg,rgba(33, 128, 254, 0) 0%, rgba(33, 129, 254, 0.9) 50%, rgba(33, 128, 254, 0) 100%);
-  -webkit-box-shadow: 0px 0px 50px 5px #2181fe9f; 
-  box-shadow: 0px 0px 50px 5px #2181fe9f;
-}
