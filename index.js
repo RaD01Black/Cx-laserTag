@@ -100,16 +100,16 @@ document.querySelectorAll(".input-container").forEach(container => {
 
   input.addEventListener("input", () => {
     if (input.value.trim() !== "" && input.value !== "Password") {
-      privateText.textContent = "on";
+      privateText.textContent = "On";
     } else {
-      privateText.textContent = "off";
+      privateText.textContent = "Off";
     }
   });
 
   input.addEventListener("blur", () => {
     if (input.value.trim() === "") {
       input.value = "Password";
-      privateText.textContent = "off";
+      privateText.textContent = "Off";
     }
   });
 });
