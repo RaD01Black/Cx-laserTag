@@ -90,3 +90,45 @@ document.querySelectorAll(".input-container.dropdown").forEach(container => {
     }
   });
 });
+
+document.querySelectorAll(".input-container").forEach(container => {
+  const input = container.querySelector("input");
+  const privateText = container.querySelector(".privateLobbyText span");
+
+  // فقط روی کانتینرهایی که این دوتا رو دارن کد اجرا بشه
+  if (!input || !privateText) return;
+
+  // فوکوس → اگه مقدار Password هست پاک بشه
+  input.addEventListener("focus", () => {
+    if (input.value === "Password") {
+      input.value = "";
+    }
+  });
+
+  // تغییر محتوا → وضعیت on/off
+  input.addEventListener("input", () => {
+    if (input.value.trim() !== "" && input.value !== "Password") {
+      privateText.textContent = "on";
+    } else {
+      privateText.textContent = "off";
+    }
+  });
+
+  // وقتی از input خارج بشه → اگه خالی بود برگرده به Password
+  input.addEventListener("blur", () => {
+    if (input.value.trim() === "") {
+      input.value = "Password";
+      privateText.textContent = "off";
+    }
+  });
+});
+
+document.querySelectorAll(".lobby-input").forEach(input => {
+  const defaultValue = "CanXLobby";
+
+  input.addEventListener("blur", () => {
+    if (input.value.trim() === "") {
+      input.value = defaultValue;
+    }
+  });
+});
