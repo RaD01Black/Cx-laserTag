@@ -52,35 +52,41 @@ document.querySelectorAll(".input-container").forEach(container => {
 //  Dropdown 
 document.querySelectorAll(".input-container.dropdown").forEach(container => {
   const selected  = container.querySelector(".selected-value");
-  const whiteLine = container.querySelector(".WhitlineBottomInput");
   const menu      = container.querySelector(".dropdown-menu");
+  const whiteLine = container.querySelector(".WhitlineBottomInput");
   const dropdownName = container.dataset.name;
 
-  if (!selected || !whiteLine || !menu) return; 
+  if (!selected || !menu) return;
+
+  // باز/بسته کردن
   container.addEventListener("click", (e) => {
     e.stopPropagation();
     document.querySelectorAll(".input-container.dropdown").forEach(c => c.classList.remove("open"));
     container.classList.add("open");
-
-    whiteLine.style.transform = "translateX(50px)";
+    if (whiteLine) whiteLine.style.transform = "translateX(50px)";
   });
 
+  // انتخاب آیتم
   menu.querySelectorAll("li").forEach(item => {
     item.addEventListener("click", (e) => {
       e.stopPropagation();
-      selected.textContent = item.dataset.value;
-      container.classList.remove("open");
-      whiteLine.style.transform = "translateX(0px)";
 
-  
-      console.log(`${dropdownName} changed to: ${item.dataset.value}`); // az inja mitoni befahmi data on drop dwona chie
+      // مقدار انتخابی شامل HTML
+      selected.innerHTML = item.dataset.value;
+
+      container.classList.remove("open");
+      if (whiteLine) whiteLine.style.transform = "translateX(0px)";
+
+      // لاگ تغییرات
+      console.log(`${dropdownName} changed to: ${item.dataset.value}`);
     });
   });
 
+  // کلیک بیرون → بستن
   document.addEventListener("click", (e) => {
     if (!container.contains(e.target)) {
       container.classList.remove("open");
-      whiteLine.style.transform = "translateX(0px)";
+      if (whiteLine) whiteLine.style.transform = "translateX(0px)";
     }
   });
 });

@@ -400,3 +400,9 @@
   font-weight: 900;
   transform: translateX(1.4rem);
 }
+
+.TextSizeCreateLobby {
+  font-size: 12px !important;
+  font-weight: 300;
+  color: #fff !important;
+}
