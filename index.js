@@ -58,7 +58,6 @@ document.querySelectorAll(".input-container.dropdown").forEach(container => {
 
   if (!selected || !menu) return;
 
-  // باز/بسته کردن
   container.addEventListener("click", (e) => {
     e.stopPropagation();
     document.querySelectorAll(".input-container.dropdown").forEach(c => c.classList.remove("open"));
@@ -66,23 +65,19 @@ document.querySelectorAll(".input-container.dropdown").forEach(container => {
     if (whiteLine) whiteLine.style.transform = "translateX(50px)";
   });
 
-  // انتخاب آیتم
   menu.querySelectorAll("li").forEach(item => {
     item.addEventListener("click", (e) => {
       e.stopPropagation();
 
-      // مقدار انتخابی شامل HTML
       selected.innerHTML = item.dataset.value;
 
       container.classList.remove("open");
       if (whiteLine) whiteLine.style.transform = "translateX(0px)";
 
-      // لاگ تغییرات
-      console.log(`${dropdownName} changed to: ${item.dataset.value}`);
+      console.log(`${dropdownName} changed to: ${item.dataset.value}`); // inja log migire-----------------------------------------
     });
   });
 
-  // کلیک بیرون → بستن
   document.addEventListener("click", (e) => {
     if (!container.contains(e.target)) {
       container.classList.remove("open");
@@ -95,17 +90,14 @@ document.querySelectorAll(".input-container").forEach(container => {
   const input = container.querySelector("input");
   const privateText = container.querySelector(".privateLobbyText span");
 
-  // فقط روی کانتینرهایی که این دوتا رو دارن کد اجرا بشه
   if (!input || !privateText) return;
 
-  // فوکوس → اگه مقدار Password هست پاک بشه
   input.addEventListener("focus", () => {
     if (input.value === "Password") {
       input.value = "";
     }
   });
 
-  // تغییر محتوا → وضعیت on/off
   input.addEventListener("input", () => {
     if (input.value.trim() !== "" && input.value !== "Password") {
       privateText.textContent = "on";
@@ -114,7 +106,6 @@ document.querySelectorAll(".input-container").forEach(container => {
     }
   });
 
-  // وقتی از input خارج بشه → اگه خالی بود برگرده به Password
   input.addEventListener("blur", () => {
     if (input.value.trim() === "") {
       input.value = "Password";
@@ -126,14 +117,12 @@ document.querySelectorAll(".input-container").forEach(container => {
 document.querySelectorAll(".lobby-input").forEach(input => {
   const defaultValue = "CanXLobby";
 
-  // وقتی کلیک می‌کنه → اگه همون مقدار پیش‌فرضه پاک بشه
   input.addEventListener("focus", () => {
     if (input.value === defaultValue) {
       input.value = "";
     }
   });
 
-  // وقتی blur میشه → اگه خالی مونده بود برگرده به مقدار پیش‌فرض
   input.addEventListener("blur", () => {
     if (input.value.trim() === "") {
       input.value = defaultValue;
