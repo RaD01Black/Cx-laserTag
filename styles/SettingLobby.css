@@ -376,11 +376,11 @@
   left: 0;
   width: 100%;
   top: calc(100% + 6px);
-  background: rgba(106, 106, 106, 0.19);
-  border-radius: 16px;
+  background: rgba(34, 34, 34, 0.19);
+  border-radius:5px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(19.1px);
-  -webkit-backdrop-filter: blur(19.1px);
+  backdrop-filter: blur(22.1px);
+  -webkit-backdrop-filter: blur(22.1px);
   list-style: none;
   margin: 0;
   padding: 6px 0;
@@ -444,15 +444,14 @@
   user-select: none;
 }
 
-/* Box style */
 .box {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   border: 2px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
+  border-radius: 4px;
   background: transparent;
   position: relative;
   overflow: hidden;
@@ -469,7 +468,6 @@
   opacity: 0.6;
 }
 
-/* SVG checkmark */
 .checkmark {
   width: 16px;
   height: 17px;
@@ -483,21 +481,35 @@
   transform: scale(1);
 }
 
-/* Labels */
 .label {
-  font-size: 18px;
+  font-size: 15px;
   transition: color 0.4s ease, transform 0.4s ease;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+
 }
 
 .active-label {
   color: white;
-  font-weight: bold;
-  transform: scale(1.1);
+  transform: scale(1.05) ;
 }
 
 .inactive-label {
   color: gray;
-  transform: scale(0.9);
+  transform: scale(0.9) ;
+}
+
+.leftTr {
+  position: absolute;
+  right: 7rem;
+}
+
+.offSwitch {
+  transform: translateX(-13px);
+}
+
+.Onswithc {
+  transform: translateX(3px);
 }
 
 /* Highlight animation */
