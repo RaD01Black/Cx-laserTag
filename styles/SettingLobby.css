@@ -406,3 +406,7 @@
   font-weight: 300;
   color: #fff !important;
 }
+
+.privateLobbyText {
+  transform: translateX(-5rem) !important;
+}
