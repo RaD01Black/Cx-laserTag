@@ -129,3 +129,39 @@ document.querySelectorAll(".lobby-input").forEach(input => {
     }
   });
 });
+
+let isOn = true;
+
+function toggleSwitch() {
+  const onBox = document.getElementById("onBox");
+  const offBox = document.getElementById("offBox");
+  const onLabel = document.getElementById("onLabel");
+  const offLabel = document.getElementById("offLabel");
+
+  isOn = !isOn;
+
+  if (isOn) {
+    onBox.classList.add("active");
+    offBox.classList.remove("active");
+    onLabel.classList.add("active-label");
+    onLabel.classList.remove("inactive-label");
+    offLabel.classList.remove("active-label");
+    offLabel.classList.add("inactive-label");
+
+    logAction("Switched ON");
+  } else {
+    onBox.classList.remove("active");
+    offBox.classList.add("active");
+    onLabel.classList.remove("active-label");
+    onLabel.classList.add("inactive-label");
+    offLabel.classList.add("active-label");
+    offLabel.classList.remove("inactive-label");
+
+    logAction("Switched OFF");
+  }
+}
+
+function logAction(action) {
+  const time = new Date().toLocaleTimeString();
+  console.log(`[${time}] ${action}`);
+}

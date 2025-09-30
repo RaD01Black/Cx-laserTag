@@ -358,7 +358,29 @@
   </div>
 
 
-  <div class="input-container dropdown" data-name="Map Size">
+  <div class="FriendlyFireDiv">
+    <p>Friendly Fire</p>
+    <div class="switch" onclick="toggleSwitch()">
+        <div class="box active" id="onBox">
+          <div class="highlight"></div>
+          <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 16 17" fill="none">
+            <path d="M13.3334 4.5L6.00008 11.8333L2.66675 8.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="label active-label" id="onLabel">ON</span>
+    
+        <div class="box" id="offBox">
+          <div class="highlight"></div>
+          <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="22" height="23"  viewBox="0 0 16 17" fill="none">
+            <path d="M13.3334 4.5L6.00008 11.8333L2.66675 8.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="label inactive-label" id="offLabel">Off</span>
+      </div>
+  </div>
+
+
+  <div class="input-containerBlue input-container dropdown" data-name="Map Size">
     <p class="selected-value">Small</p>
     <span class="ChangePOTI">Map Size</span>
         <div class="arrow"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -374,7 +396,7 @@
     </ul>
   </div>
 
-  <div class="input-container dropdown" data-name="Mode">
+  <div class="input-containerBlue input-container dropdown" data-name="Mode">
     <p class="selected-value">Classic</p>
     <span class="ChangePOTI">Mode</span>
         <div class="arrow"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
