@@ -126,6 +126,14 @@ document.querySelectorAll(".input-container").forEach(container => {
 document.querySelectorAll(".lobby-input").forEach(input => {
   const defaultValue = "CanXLobby";
 
+  // وقتی کلیک می‌کنه → اگه همون مقدار پیش‌فرضه پاک بشه
+  input.addEventListener("focus", () => {
+    if (input.value === defaultValue) {
+      input.value = "";
+    }
+  });
+
+  // وقتی blur میشه → اگه خالی مونده بود برگرده به مقدار پیش‌فرض
   input.addEventListener("blur", () => {
     if (input.value.trim() === "") {
       input.value = defaultValue;
