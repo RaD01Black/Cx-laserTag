@@ -305,7 +305,7 @@
   height: 55px;
   width: 420px;
   background: url("../imgs/InputBgDivBlue.png") no-repeat center !important;
-  background-size: cover;
+  background-size: cover !important;
   transition: transform 0.2s ease;
   font-family: "Roboto", sans-serif;
   position: relative;
@@ -528,4 +528,8 @@
 .box.active .highlight {
   transform: scale(1);
   opacity: 1;
+}
+
+.SDS {
+  transform: translateX(-30px) !important;
 }
