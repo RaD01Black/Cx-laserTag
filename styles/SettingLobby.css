@@ -440,8 +440,12 @@
   justify-content: space-between;
   align-items: center;
   font-weight: 900;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.FriendlyFireDiv p {
+  font-size: 18px;
 }
 .switch {
   display: flex;
