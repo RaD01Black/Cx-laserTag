@@ -93,14 +93,14 @@ document.querySelectorAll(".input-container").forEach(container => {
   if (!input || !privateText) return;
 
   const DEFAULT = "Password";
-  const FADE_TIME = 300; // must match CSS
+  const FADE_TIME = 300; 
 
   function setTextWithFade(newText) {
-    if (privateText.textContent === newText) return; // avoid duplicate updates
-    privateText.classList.add("fading");             // fade out
+    if (privateText.textContent === newText) return; 
+    privateText.classList.add("fading");             
     setTimeout(() => {
-      privateText.textContent = newText;             // swap text
-      privateText.classList.remove("fading");        // fade back in
+      privateText.textContent = newText;            
+      privateText.classList.remove("fading");        
     }, FADE_TIME);
   }
 
@@ -185,14 +185,12 @@ function formatNumber(num) {
 }
 
 numberSpan.addEventListener("input", () => {
-  // فقط رقم‌ها رو نگه داریم
   let val = numberSpan.innerText.replace(/\D/g, "");
   if (val === "") val = "0";
   numberSpan.innerText = formatNumber(val);
   placeCaretAtEnd(numberSpan);
 });
 
-// وقتی صفر هست و کاربر عدد جدید زد → صفر پاک بشه
 numberSpan.addEventListener("keydown", (e) => {
   if (/^\d$/.test(e.key) && numberSpan.innerText === "0") {
     numberSpan.innerText = "";
@@ -207,3 +205,20 @@ function placeCaretAtEnd(el) {
   sel.removeAllRanges();
   sel.addRange(range);
 }
+
+document.querySelectorAll(".input-container").forEach(container => {
+  const numberSpan = container.querySelector(".only-number"); 
+  const whiteLine = container.querySelector(".WhitlineBottomInput");
+
+  if (numberSpan) {
+    numberSpan.addEventListener("focus", () => {
+      container.classList.add("active");
+      if (whiteLine) whiteLine.style.transform = "translateX(60px)";
+    });
+
+    numberSpan.addEventListener("blur", () => {
+      container.classList.remove("active");
+      if (whiteLine) whiteLine.style.transform = "translateX(0px)";
+    });
+  }
+});
