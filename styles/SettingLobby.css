@@ -563,3 +563,12 @@
   margin: 0;
 }
 
+.TitleTextPages {
+  font-family: "RangerRegular", sans-serif;
+  font-size: 45px;
+}
+
+.TitleDiv {
+  margin-bottom: 2rem;
+  transform: translateY(-1rem) translateX(-20px);
+}
