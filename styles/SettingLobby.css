@@ -549,3 +549,17 @@
   transform: translateX(-30px) !important;
 }
 
+.fake-input {
+  display: flex;
+  flex-direction: row;
+  font-weight: 800;
+  margin-left: 1.3rem;
+}
+.fake-input p{
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+

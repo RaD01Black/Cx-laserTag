@@ -178,27 +178,25 @@ function logAction(action) {
   console.log(`[${time}] ${action}`);
 }
 
-document.querySelectorAll(".lobby-input").forEach(el => {
-  const numberEl = el.querySelector(".only-number");
-  const suffix = "$ For winners";
+const numberSpan = document.querySelector(".only-number");
 
-  // prevent deleting static suffix
-  el.addEventListener("input", () => {
-    let text = el.innerText.trim();
+function formatNumber(num) {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
 
-    // enforce format: number + suffix
-    if (!text.endsWith(suffix)) {
-      el.innerHTML = `<span class="only-number">${numberEl.innerText}</span>${suffix}`;
-      placeCaretAtEnd(numberEl);
-    }
-  });
+numberSpan.addEventListener("input", () => {
+  // فقط رقم‌ها رو نگه داریم
+  let val = numberSpan.innerText.replace(/\D/g, "");
+  if (val === "") val = "0";
+  numberSpan.innerText = formatNumber(val);
+  placeCaretAtEnd(numberSpan);
+});
 
-  // allow only numbers inside the span
-  el.addEventListener("keydown", (e) => {
-    if (!/^\d$/.test(e.key) && e.key !== "Backspace" && e.key !== "Delete" && e.key !== "ArrowLeft" && e.key !== "ArrowRight") {
-      e.preventDefault();
-    }
-  });
+// وقتی صفر هست و کاربر عدد جدید زد → صفر پاک بشه
+numberSpan.addEventListener("keydown", (e) => {
+  if (/^\d$/.test(e.key) && numberSpan.innerText === "0") {
+    numberSpan.innerText = "";
+  }
 });
 
 function placeCaretAtEnd(el) {
