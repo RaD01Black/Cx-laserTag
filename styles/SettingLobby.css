@@ -426,7 +426,14 @@
   transform: translateX(-5rem) !important;
 }
 
+.privateLobbyText span {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
 
+.privateLobbyText span.fading {
+  opacity: 0;
+}
 .FriendlyFireDiv {
   display: flex;
   flex-direction: row;

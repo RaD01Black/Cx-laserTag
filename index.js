@@ -92,24 +92,36 @@ document.querySelectorAll(".input-container").forEach(container => {
 
   if (!input || !privateText) return;
 
+  const DEFAULT = "Password";
+  const FADE_TIME = 300; // must match CSS
+
+  function setTextWithFade(newText) {
+    if (privateText.textContent === newText) return; // avoid duplicate updates
+    privateText.classList.add("fading");             // fade out
+    setTimeout(() => {
+      privateText.textContent = newText;             // swap text
+      privateText.classList.remove("fading");        // fade back in
+    }, FADE_TIME);
+  }
+
   input.addEventListener("focus", () => {
-    if (input.value === "Password") {
+    if (input.value === DEFAULT) {
       input.value = "";
     }
   });
 
   input.addEventListener("input", () => {
-    if (input.value.trim() !== "" && input.value !== "Password") {
-      privateText.textContent = "On";
+    if (input.value.trim() !== "" && input.value !== DEFAULT) {
+      setTextWithFade("On");
     } else {
-      privateText.textContent = "Off";
+      setTextWithFade("Off");
     }
   });
 
   input.addEventListener("blur", () => {
     if (input.value.trim() === "") {
-      input.value = "Password";
-      privateText.textContent = "Off";
+      input.value = DEFAULT;
+      setTextWithFade("Off");
     }
   });
 });
