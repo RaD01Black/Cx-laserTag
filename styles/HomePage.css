@@ -1,5 +1,5 @@
 .HomePage {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
@@ -86,12 +86,18 @@
 
 .BttomDiVDetail {
     position: relative; 
+    background: rgba(7, 7, 7, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 8px;
   }
   
   .BttomDiVDetail svg {
     display: block;       
     position: relative;   
-    z-index: 1;           
+    z-index: 1;
+    width: 100%;        
   }
   
   .TextDetailBottomDiv {

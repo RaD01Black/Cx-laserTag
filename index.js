@@ -222,3 +222,30 @@ document.querySelectorAll(".input-container").forEach(container => {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const firstElement = document.querySelector('.toppartmodal');
+  if (firstElement) {
+    firstElement.style.setProperty('--animate-delay', '0.2s');
+    firstElement.style.animationDelay = '0.2s';
+  }
+
+  function setDelay(className, delay) {
+    const elements = document.querySelectorAll(className);
+    elements.forEach(element => {
+      element.style.setProperty('--animate-delay', delay);
+      element.style.animationDelay = delay;
+    });
+  }
+
+  setDelay('.anim1', '0.2s');
+  setDelay('.anim2', '0.3s');
+  setDelay('.anim3', '0.4s');
+  setDelay('.anim4', '0.5s');
+  setDelay('.anim5', '0.6s');
+  setDelay('.anim6', '0.7s');
+  setDelay('.anim7', '0.8s');
+  setDelay('.anim8', '0.9s');
+  setDelay('.anim9', '1s');
+  setDelay('.anim7', '1.1s');
+});
