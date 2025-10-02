@@ -441,7 +441,6 @@
 .FriendlyFireDiv {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   font-weight: 900;
   margin-top: 0.5rem;
@@ -457,6 +456,7 @@
   gap: 20px;
   cursor: pointer;
   user-select: none;
+  transform: translateX(13.6rem);
 }
 
 .box {
@@ -564,11 +564,26 @@
 }
 
 .TitleTextPages {
-  font-family: "RangerRegular", sans-serif;
   font-size: 45px;
 }
 
-.TitleDiv {
-  margin-bottom: 2rem;
-  transform: translateY(-1rem) translateX(-20px);
+.TopText {
+  font-family: "RangerRegular", sans-serif;
+}
+
+.FirstP {
+  -webkit-text-stroke: 1px #444444;
+  font-size: 48px;
+  width: 100vw;
+  color: transparent;
+  transform: translateX(-1rem) translateY(-2.2rem);
+}
+.SecondP {
+  transform: translateY(-4.2rem) !important;
+  color: #fff;
+  font-size: 45px;
+  width: 100vw;
+  text-shadow: 
+  #ffffff 0px 0px 40px,
+  #ffffff 0px 0px 80px;
 }
