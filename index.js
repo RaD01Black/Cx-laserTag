@@ -177,3 +177,35 @@ function logAction(action) {
   const time = new Date().toLocaleTimeString();
   console.log(`[${time}] ${action}`);
 }
+
+document.querySelectorAll(".lobby-input").forEach(el => {
+  const numberEl = el.querySelector(".only-number");
+  const suffix = "$ For winners";
+
+  // prevent deleting static suffix
+  el.addEventListener("input", () => {
+    let text = el.innerText.trim();
+
+    // enforce format: number + suffix
+    if (!text.endsWith(suffix)) {
+      el.innerHTML = `<span class="only-number">${numberEl.innerText}</span>${suffix}`;
+      placeCaretAtEnd(numberEl);
+    }
+  });
+
+  // allow only numbers inside the span
+  el.addEventListener("keydown", (e) => {
+    if (!/^\d$/.test(e.key) && e.key !== "Backspace" && e.key !== "Delete" && e.key !== "ArrowLeft" && e.key !== "ArrowRight") {
+      e.preventDefault();
+    }
+  });
+});
+
+function placeCaretAtEnd(el) {
+  const range = document.createRange();
+  const sel = window.getSelection();
+  range.selectNodeContents(el);
+  range.collapse(false);
+  sel.removeAllRanges();
+  sel.addRange(range);
+}
