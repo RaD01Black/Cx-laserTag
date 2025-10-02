@@ -115,17 +115,37 @@ document.querySelectorAll(".input-container").forEach(container => {
 });
 
 document.querySelectorAll(".lobby-input").forEach(input => {
-  const defaultValue = "CanXLobby";
+  const DEFAULT = input.dataset.default || "CanXLobby";
+  const FADE_MS = 250; // must match CSS duration
 
+  // Initial state: show default text (visible)
+  // If you want it faded only when focused, keep as is.
+  
   input.addEventListener("focus", () => {
-    if (input.value === defaultValue) {
-      input.value = "";
+    // If we're showing the default, fade it out then clear
+    if (input.value === DEFAULT) {
+      input.classList.add("is-faded");      // start fade-out
+      setTimeout(() => {
+        input.value = "";                   // clear after fade
+        // still faded while empty; caret is visible
+      }, FADE_MS);
+    }
+  });
+
+  input.addEventListener("input", () => {
+    // As soon as user types something, fade back in
+    if (input.value.trim() !== "") {
+      input.classList.remove("is-faded");   // fade in
+    } else {
+      input.classList.add("is-faded");      // stay faded if empty
     }
   });
 
   input.addEventListener("blur", () => {
+    // If left empty, restore default and show it (no fade)
     if (input.value.trim() === "") {
-      input.value = defaultValue;
+      input.value = DEFAULT;
+      input.classList.remove("is-faded");   // make default visible
     }
   });
 });

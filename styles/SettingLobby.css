@@ -533,3 +533,17 @@
 .SDS {
   transform: translateX(-30px) !important;
 }
+
+.lobby-input {
+  transition: color 0.25s ease;
+  color: #fff;            /* your normal text color */
+  caret-color: #fff;      /* keep caret visible even when text fades */
+}
+
+.lobby-input.is-faded {
+  color: transparent;     /* fades text out, but caret still shows */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lobby-input { transition: none; }
+}
