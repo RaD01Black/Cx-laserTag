@@ -303,6 +303,12 @@
   cursor: pointer;
 }
 
+/* start hidden */
+.input-container,
+.FriendlyFireDiv {
+  opacity: 0;
+}
+
 .input-containerBlue {
   display: flex;
   justify-content: space-between;
@@ -338,6 +344,7 @@
   font-size: 12px;
   color: #ffffffe0;
 }
+
 
 .ChangePOTI {
   transform: translateX(-3rem) !important;
@@ -396,6 +403,7 @@
   transform: translateY(-6px);
   transition: opacity 0.25s ease, transform 0.25s ease, max-height 0.35s ease;
   z-index: 9999; 
+  
 }
 
 .dropdown-menu li {
