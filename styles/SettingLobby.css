@@ -303,7 +303,6 @@
   cursor: pointer;
 }
 
-/* start hidden */
 .input-container,
 .FriendlyFireDiv {
   opacity: 0;
@@ -537,7 +536,6 @@
   transform: translateX(3px);
 }
 
-/* Highlight animation */
 .highlight {
   position: absolute;
   top: -50%;

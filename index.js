@@ -1,24 +1,19 @@
 function replayLobbyAnimation() {
-  // find the SettingLobby root (id OR class), fall back to document if not found
   const lobbyRoot =
     document.getElementById('SettingLobby') ||
     document.querySelector('.SettingLobby') ||
     document;
 
-  // prefer your LeftPartSettingMenu scope if present
   const scope =
     lobbyRoot.querySelector('.LeftPartSettingMenu') || lobbyRoot;
 
   const targets = scope.querySelectorAll('.input-container, .FriendlyFireDiv');
   if (!targets.length) return;
 
-  // kill any running tweens on those elements
   gsap.killTweensOf(targets);
 
-  // reset opacity every time so animation restarts cleanly
   gsap.set(targets, { opacity: 0 });
 
-  // ensure the reset has painted before animating
   requestAnimationFrame(() => {
     gsap.to(targets, {
       opacity: 1,
@@ -30,7 +25,6 @@ function replayLobbyAnimation() {
   });
 }
 
-// If you use a pageHandler, call this unconditionally when targeting SettingLobby:
 function pageHandler(page) {
   const pages = ['homepage', 'SettingLobby', 'adminPlan'];
 
@@ -41,7 +35,6 @@ function pageHandler(page) {
     if (p === page) {
       el.style.display = 'flex';
       if (p === 'SettingLobby') {
-        // replay even if it was already open
         replayLobbyAnimation();
       }
     } else {
@@ -50,7 +43,6 @@ function pageHandler(page) {
   });
 }
 
-// Optional: run once on initial load if SettingLobby starts open
 document.addEventListener('DOMContentLoaded', () => {
   const isOpen =
     (document.getElementById('SettingLobby') || document.querySelector('.SettingLobby'));
