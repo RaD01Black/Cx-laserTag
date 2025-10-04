@@ -148,8 +148,8 @@ height: 1px;
 }
 
 .diamond-wrapper {
-  width: 80px;
-  height: 80px;
+  width:70px;
+  height:70px;
   overflow: hidden;
   transform: rotate(45deg);
   border-radius: 17%; 
@@ -168,17 +168,17 @@ height: 1px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 1px;
 }
 
 .VectorIconLeft {
-  width: 40px;
-  height: 40px;
-
+  width: 33px;
+  height: 43px;
+  transform: translateY(-3px);
 }
 
 .VectorIconRight {
-  width: 40px;
-  height: 40px;
- 
+  width: 33px;
+  height: 43px;
+  transform: translateY(-3px);
 }
