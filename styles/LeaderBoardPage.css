@@ -148,8 +148,8 @@ height: 1px;
 }
 
 .diamond-wrapper {
-  width: 300px;
-  height: 300px;
+  width: 80px;
+  height: 80px;
   overflow: hidden;
   transform: rotate(45deg);
   border-radius: 15%; 
