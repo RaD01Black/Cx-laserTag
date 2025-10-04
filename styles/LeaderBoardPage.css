@@ -38,3 +38,51 @@
     #ffffff 0px 0px 80px;
     animation: pulseShadow 3.5s ease-in-out infinite;
   }
+
+  .CharchaterLeaderboard {
+    position: absolute;
+    right: 0;
+    width: 41vw;
+    bottom: 0;  
+  }
+
+  .DDLINELEADER {
+    position: absolute;
+    right: -14.5rem;
+    bottom: -13rem;
+  }
+
+  .crescentLeaderBoard {
+    position: relative;
+    width: 800px;
+    height: 1050px;
+    border-radius: 50% / 60%;
+    background: transparent;
+    border-left: 40px solid white;
+    transform: rotate(31deg);
+    filter: drop-shadow(0 0 1.85rem #00fbff);
+    animation: pulseGlowLeaderBoard 4s ease-in-out infinite;
+  }
+  
+  .crescentLeaderBoard::before {
+    content: "";
+    position: absolute;
+    inset: -40px; 
+    border-left: 32px solid #74daf9;
+    border-radius: 50% / 60%;
+    transform: rotate(0deg);
+    filter: blur(40px);
+    opacity: 0.9;
+  }
+
+  @keyframes pulseGlowLeaderBoard {
+    0% {
+      filter: drop-shadow(0 0 0.5rem #00fbff);
+    }
+    50% {
+      filter: drop-shadow(0 0 2.5rem #00fbff);
+    }
+    100% {
+      filter: drop-shadow(0 0 0.5rem #00fbff);
+    }
+  }
