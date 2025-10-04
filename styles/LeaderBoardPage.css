@@ -145,7 +145,6 @@ height: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 .diamond-wrapper {
@@ -153,7 +152,7 @@ height: 1px;
   height: 80px;
   overflow: hidden;
   transform: rotate(45deg);
-  border-radius: 15%; 
+  border-radius: 17%; 
 }
 
 .diamond-wrapper img {
@@ -167,14 +166,19 @@ height: 1px;
 .SteamImageDivLeader {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .VectorIconLeft {
-  width: 20px;
-  height: 10px;
+  width: 40px;
+  height: 40px;
+
 }
 
 .VectorIconRight {
-  width: 20px;
-  height: 10px;
+  width: 40px;
+  height: 40px;
+ 
 }
