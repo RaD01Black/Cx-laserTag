@@ -153,6 +153,8 @@ height: 1px;
   overflow: hidden;
   transform: rotate(45deg);
   border-radius: 17%; 
+  filter: drop-shadow(0 0 1.95rem rgb(114, 114, 114));
+
 }
 
 .diamond-wrapper img {
@@ -169,6 +171,7 @@ height: 1px;
   justify-content: center;
   align-items: center;
   gap: 1px;
+  transform: translateY(-6rem);
 }
 
 .VectorIconLeft {
@@ -181,4 +184,12 @@ height: 1px;
   width: 33px;
   height: 43px;
   transform: translateY(-3px);
+}
+
+.BottomSteamLine {
+  position: absolute;
+}
+
+.SteamUserNamePlayer {
+  
 }
