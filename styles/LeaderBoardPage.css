@@ -140,7 +140,6 @@ background: #444444;
 height: 1px;
 }
 
-/* This container is just for centering the diamond on the page */
 .center-container {
   display: flex;
   justify-content: center;
@@ -148,21 +147,17 @@ height: 1px;
   min-height: 100vh;
 }
 
-/* This is the key element for creating the shape */
 .diamond-wrapper {
   width: 300px;
   height: 300px;
   overflow: hidden;
   transform: rotate(45deg);
-  border-radius: 15%; /* Adjust this value for more or less rounding */
+  border-radius: 15%; 
 }
 
-/* The image inside the wrapper */
 .diamond-wrapper img {
   max-width: 100%;
-  transform: rotate(-45deg) scale(1.42); /* Counter-rotate and scale up */
-  
-  /* These ensure the image covers the area and is centered */
+  transform: rotate(-45deg) scale(1.42);
   width: 100%;
   height: 100%;
   object-fit: cover;
