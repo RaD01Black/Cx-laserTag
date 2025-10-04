@@ -26,7 +26,7 @@ function replayLobbyAnimation() {
 }
 
 function pageHandler(page) {
-  const pages = ['homepage', 'SettingLobby', 'adminPlan'];
+  const pages = ['homepage', 'SettingLobby', 'LeaderBoardPage'];
 
   pages.forEach(p => {
     const el = document.getElementById(p) || document.querySelector('.' + p);
