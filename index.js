@@ -11,7 +11,6 @@ function replayLobbyAnimation() {
   if (!targets.length) return;
 
   gsap.killTweensOf(targets);
-
   gsap.set(targets, { opacity: 0 });
 
   requestAnimationFrame(() => {
@@ -19,6 +18,29 @@ function replayLobbyAnimation() {
       opacity: 1,
       duration: 0.8,
       stagger: 0.1,
+      ease: 'power1.out',
+      overwrite: 'auto'
+    });
+  });
+}
+
+function replayLeaderBoardAnimation() {
+  const boardRoot =
+    document.getElementById('LeaderBoardPage') ||
+    document.querySelector('.LeaderBoardPage') ||
+    document;
+
+  const targets = boardRoot.querySelectorAll('.PlayerBoxLeaderBoard');
+  if (!targets.length) return;
+
+  gsap.killTweensOf(targets);
+  gsap.set(targets, { opacity: 0 });
+
+  requestAnimationFrame(() => {
+    gsap.to(targets, {
+      opacity: 1,
+      duration: 0.8,
+      stagger: 0.15,
       ease: 'power1.out',
       overwrite: 'auto'
     });
@@ -34,9 +56,14 @@ function pageHandler(page) {
 
     if (p === page) {
       el.style.display = 'flex';
+
+      // 🔹 Trigger animations depending on which page is shown
       if (p === 'SettingLobby') {
         replayLobbyAnimation();
+      } else if (p === 'LeaderBoardPage') {
+        replayLeaderBoardAnimation();
       }
+
     } else {
       el.style.display = 'none';
     }

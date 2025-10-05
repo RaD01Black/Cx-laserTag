@@ -415,9 +415,16 @@ backdrop-filter: blur(17.9px);
   gap: 10px;
   justify-content: start;
   position: absolute;
-  left: 20rem;
+  left: 22rem;
 }
 
 .BadegsDivs img {
-  width: 40px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: transform .30s ease;
+}
+
+.BadegsDivs img:hover {
+  transform: scale(1.05);
 }
