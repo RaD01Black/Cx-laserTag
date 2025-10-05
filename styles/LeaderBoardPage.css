@@ -394,7 +394,7 @@ backdrop-filter: blur(17.9px);
   justify-content: center;
   align-items: center;
   font-family: "Afacad", sans-serif;
-
+  box-shadow: rgba(181, 181, 181, 0.162) 0px 5px 15px;
 }
 
 .killsDivBg p:nth-of-type(1) {
