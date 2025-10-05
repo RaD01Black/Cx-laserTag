@@ -282,5 +282,43 @@ backdrop-filter: blur(17.9px);
   border-radius: 4px;
   width: 64rem;
   height: 5.289rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Afacad", sans-serif;
+}
+
+.NumberList {
+  position: absolute;
+  left: 2rem;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.ImageListleader {
+  position: absolute;
+  left: 4.7rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+}
+
+.SteamDetailLeaderBoard {
+  position: absolute;
+  left: 8.4rem;
+  display: flex;
+  flex-direction: column; 
+}
+
+.SteamDetailLeaderBoard h4 {
+  font-size: 19px;
+  transform: translateY(1px);
+}
+
+.SteamDetailLeaderBoard p {
+  font-size: 14px;
+  color: #898989;
+  transform: translateY(-1px);
 
 }
