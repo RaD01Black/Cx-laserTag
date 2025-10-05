@@ -232,6 +232,14 @@ height: 1px;
   transform: translateY(-3px);
 }
 
+.GoldVecLeft {
+  transform: translateY(-3px) translateX(4px) !important;
+}
+
+.GoldVecRight {
+  transform: translateY(-3px) translateX(-4px) !important;
+}
+
 .BottomSteamLine {
   position: absolute;
 }
