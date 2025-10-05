@@ -98,6 +98,7 @@
     position: absolute;
     left: 3.5vw;
     top: 30vh;
+    gap: 30px;
   }
 
   .TopPlayerBoxSilver {
@@ -105,8 +106,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 18rem;
-    height: 16rem;
+    width: 20rem;
+    height: 18rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
