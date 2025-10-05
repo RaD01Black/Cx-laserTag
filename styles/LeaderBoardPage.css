@@ -263,9 +263,24 @@ height: 1px;
 
 .PlayersListLeaderboardDiv {
   width: 64rem;
-  background-color: #000000;
   height: 30rem;
   position: absolute;
   left: 4vw;
   margin-top: 2rem;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.PlayerBoxLeaderBoard {
+  background: url(../imgs/LeaderPlayerListBg.png) rgba(8, 8, 8, 0.6);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(17.9px);
+-webkit-backdrop-filter: blur(17.9px);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 4px;
+  width: 64rem;
+  height: 5.289rem;
+
 }
