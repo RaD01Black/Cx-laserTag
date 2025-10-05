@@ -100,7 +100,7 @@
     top: 30vh;
   }
 
-  .TopPlayerBox {
+  .TopPlayerBoxSilver {
     background: url(../imgs/SilverBoxLeaderBoard.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@
   flex-direction: column;
   gap: 5px;
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
 }
 
 .DetailInsideDiv {
@@ -171,7 +171,21 @@ height: 1px;
   justify-content: center;
   align-items: center;
   gap: 1px;
-  transform: translateY(-6rem);
+  position: absolute;
+  top: -10px;
+  animation: pulseSteamUsers 4s ease-in-out infinite;
+}
+
+@keyframes pulseSteamUsers {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .VectorIconLeft {
@@ -191,5 +205,18 @@ height: 1px;
 }
 
 .SteamUserNamePlayer {
-  
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 20px;
+}
+
+.SteamUserNamePlayer h1 {
+  font-size: 19px;
+}
+
+.SteamUserNamePlayer p {
+  font-size: 12px;
+  color: #898989;
 }
