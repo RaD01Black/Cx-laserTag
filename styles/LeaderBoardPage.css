@@ -260,3 +260,12 @@ height: 1px;
   font-size: 13px;
   color: #898989;
 }
+
+.PlayersListLeaderboardDiv {
+  width: 64rem;
+  background-color: #000000;
+  height: 30rem;
+  position: absolute;
+  left: 4vw;
+  margin-top: 2rem;
+}
