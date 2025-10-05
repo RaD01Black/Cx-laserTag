@@ -321,3 +321,38 @@ document.addEventListener("DOMContentLoaded", function () {
   setDelay('.anim9', '1s');
   setDelay('.anim7', '1.1s');
 });
+
+const openModalBtn = document.getElementById("openModalBtn");
+const modal = document.getElementById("myModal");
+const closeBtn = modal.querySelector(".close");
+
+openModalBtn.addEventListener("click", () => {
+  modal.classList.remove("is-closing");
+  modal.style.display = "flex";
+  requestAnimationFrame(() => {
+    modal.classList.add("is-open");
+  });
+});
+
+function closeModal() {
+  modal.classList.remove("is-open");
+  modal.classList.add("is-closing");
+
+  modal.addEventListener("animationend", function handler() {
+    modal.style.display = "none";
+    modal.classList.remove("is-closing");
+    modal.removeEventListener("animationend", handler);
+  });
+}
+
+closeBtn.addEventListener("click", closeModal);
+
+window.addEventListener("click", (e) => {
+  if (e.target === modal) closeModal();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && modal.classList.contains("is-open")) {
+    closeModal();
+  }
+});

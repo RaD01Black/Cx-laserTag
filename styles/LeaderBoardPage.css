@@ -428,3 +428,54 @@ backdrop-filter: blur(17.9px);
 .BadegsDivs img:hover {
   transform: scale(1.05);
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+
+.modal.is-open {
+  display: flex;
+  animation: fadeIn 0.3s forwards;
+}
+
+.modal.is-closing {
+  animation: fadeOut 0.3s forwards;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 10rem;
+  position: relative;
+  transform: translateY(-10px);
+  animation: slideIn 0.3s ease;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.close:hover { color: red; }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1 }
+  to { opacity: 0 }
+}
+
