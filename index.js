@@ -322,19 +322,17 @@ document.addEventListener("DOMContentLoaded", function () {
   setDelay('.anim7', '1.1s');
 });
 
-const openModalBtn = document.getElementById("openModalBtn");
-const modal = document.getElementById("myModal");
-const closeBtn = modal.querySelector(".close");
-
-openModalBtn.addEventListener("click", () => {
+function openModal(modal) {
+  if (!modal) return;
   modal.classList.remove("is-closing");
   modal.style.display = "flex";
   requestAnimationFrame(() => {
     modal.classList.add("is-open");
   });
-});
+}
 
-function closeModal() {
+function closeModal(modal) {
+  if (!modal) return;
   modal.classList.remove("is-open");
   modal.classList.add("is-closing");
 
@@ -345,14 +343,32 @@ function closeModal() {
   });
 }
 
-closeBtn.addEventListener("click", closeModal);
-
-window.addEventListener("click", (e) => {
-  if (e.target === modal) closeModal();
+// Open buttons
+document.querySelectorAll("[data-modal-target]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const target = document.querySelector(btn.dataset.modalTarget);
+    openModal(target);
+  });
 });
 
+// Close buttons
+document.querySelectorAll(".modal .close").forEach(closeBtn => {
+  closeBtn.addEventListener("click", () => {
+    const modal = closeBtn.closest(".modal");
+    closeModal(modal);
+  });
+});
+
+// Click outside to close
+window.addEventListener("click", (e) => {
+  if (e.target.classList.contains("modal")) {
+    closeModal(e.target);
+  }
+});
+
+// ESC key to close any open modal
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && modal.classList.contains("is-open")) {
-    closeModal();
+  if (e.key === "Escape") {
+    document.querySelectorAll(".modal.is-open").forEach(m => closeModal(m));
   }
 });
