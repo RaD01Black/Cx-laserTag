@@ -372,3 +372,10 @@ document.addEventListener("keydown", (e) => {
     document.querySelectorAll(".modal.is-open").forEach(m => closeModal(m));
   }
 });
+
+document.querySelectorAll('.SteamPlayerNameSteam').forEach(el => {
+  const text = el.textContent.trim();
+  if (text.length > 23) {
+    el.textContent = text.substring(0, 23) + '..';
+  }
+});
