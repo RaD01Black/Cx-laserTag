@@ -262,14 +262,17 @@ height: 1px;
 }
 
 .PlayersListLeaderboardDiv {
-  width: 64rem;
-  height: 30rem;
+  width: 64.5rem;
+  max-height: 34rem;
   position: absolute;
   left: 4vw;
   margin-top: 2rem;
   gap: 10px;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;    
+  overflow-x: hidden;
+  padding-bottom: 3rem; 
 }
 
 .PlayerBoxLeaderBoard {
@@ -280,8 +283,8 @@ backdrop-filter: blur(17.9px);
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 4px;
-  width: 64rem;
-  height: 5.289rem;
+  width: 63.5rem;
+  min-height: 5.289rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
