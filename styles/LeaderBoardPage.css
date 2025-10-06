@@ -469,17 +469,19 @@ backdrop-filter: blur(24.2px);
   width: 230px;
   height: 230px;
   position: absolute;
-  left: 3rem;
+  left: 2rem;
 }
 
 .close {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 15px;
-  font-size: 22px;
   cursor: pointer;
+  transition: transform ease .30s;
 }
-.close:hover { color: red; }
+.close:hover {
+  transform: rotate(60deg);
+ }
 
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -499,8 +501,8 @@ backdrop-filter: blur(24.2px);
 .TopTextLeaderBoardModal {
   font-family: "RangerRegular", sans-serif;
   position: absolute;
-  left: 16.5vw;
-  top: 7.5vh;
+  left: 15.5vw;
+  top: 8.5vh;
 }
 
 .TopTextLeaderBoardModal p:nth-of-type(1) {
@@ -517,5 +519,10 @@ backdrop-filter: blur(24.2px);
 }
 
 .TextDescription {
-  
+  position: absolute;
+  left: 15vw;
+  top: 10.5vh;
+  font-size: 14px;
+  max-width: 340px;
+  font-family: "Roboto", sans-serif;
 }
