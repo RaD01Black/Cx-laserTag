@@ -450,13 +450,21 @@ backdrop-filter: blur(17.9px);
 }
 
 .modal-content {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 400px;
+  background: url(../imgs/badgeModalBg.png) rgba(9, 9, 9, 0.545) ;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(24.2px);
+-webkit-backdrop-filter: blur(24.2px);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  width: 694px;
   position: relative;
   animation: slideIn 0.3s ease;
+}
+
+.modal-content img {
+  width: 230px;
+  height: 230px;
 }
 
 .close {
