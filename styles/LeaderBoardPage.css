@@ -450,7 +450,7 @@ backdrop-filter: blur(17.9px);
 }
 
 .modal-content {
-  background: url(../imgs/badgeModalBg.png) rgba(9, 9, 9, 0.463) ;
+  background: url(../imgs/badgeModalBg.png) rgba(9, 9, 9, 0.664) ;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(24.2px);
 -webkit-backdrop-filter: blur(24.2px);
@@ -515,7 +515,7 @@ backdrop-filter: blur(24.2px);
 .TopTextLeaderBoardModal p:nth-of-type(2) {
   font-size: 28px;
   color: #fff;
-  transform: translateY(-3rem) translateX(-5px);
+  transform: translateY(-3.3rem) translateX(-5px);
 }
 
 .TextDescription {
