@@ -306,7 +306,7 @@ backdrop-filter: blur(17.9px);
 
 .SteamDetailLeaderBoard {
   position: absolute;
-  left: 8.4rem;
+  left: 8.7rem;
   display: flex;
   flex-direction: column; 
 }
@@ -422,7 +422,20 @@ backdrop-filter: blur(17.9px);
   align-items: center;
   font-family: "Afacad", sans-serif;
   box-shadow: rgba(181, 181, 181, 0.162) 0px 5px 15px;
+  animation: PulseShadowKills 3s infinite;
 }
+
+@keyframes PulseShadowKills {
+  0% {
+    box-shadow: rgba(181, 181, 181, 0.162) 0px 5px 15px;
+  }
+  50% {
+    box-shadow: rgba(146, 146, 146, 0.185) 0px 5px 25px;
+  }
+  100% {
+    box-shadow: rgba(181, 181, 181, 0.162) 0px 5px 15px;
+  }
+  }
 
 .killsDivBg p:nth-of-type(1) {
   position: absolute;
