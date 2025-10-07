@@ -48,7 +48,7 @@ function replayLeaderBoardAnimation() {
 }
 
 function pageHandler(page) {
-  const pages = ['homepage', 'SettingLobby', 'LeaderBoardPage'];
+  const pages = ['homepage', 'SettingLobby', 'LeaderBoardPage', 'LobbysPage'];
 
   pages.forEach(p => {
     const el = document.getElementById(p) || document.querySelector('.' + p);
@@ -57,7 +57,6 @@ function pageHandler(page) {
     if (p === page) {
       el.style.display = 'flex';
 
-      // 🔹 Trigger animations depending on which page is shown
       if (p === 'SettingLobby') {
         replayLobbyAnimation();
       } else if (p === 'LeaderBoardPage') {
