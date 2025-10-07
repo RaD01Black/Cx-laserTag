@@ -13,3 +13,19 @@
     color: #fff;
     overflow: hidden;
 }
+
+.RoomsDivsSection {
+    width: 65rem;
+    height: 44rem;
+    bottom: 8vh;
+    position: absolute;
+    left: 4vw;
+}
+
+.RoomBoxDiv {
+    background: url(../imgs/RoomBgBoxs.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 65rem;
+    height: 6rem;
+}
