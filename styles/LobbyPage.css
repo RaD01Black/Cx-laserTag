@@ -62,16 +62,23 @@
 
 .UsenameCreatorP {
     font-family: "Afacad", sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 700;
 }
 
 .InSdDiv {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 13px;
 }
 
 .PrivateDiv {
-    
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 3px;
+    color: #ec3235;
+    text-shadow: #ec3235 1px 0 15px;
+    text-align: center;
+    transform: translateY(2px);
 }
