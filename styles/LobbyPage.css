@@ -64,6 +64,8 @@
     font-family: "Afacad", sans-serif;
     font-size: 19px;
     font-weight: 700;
+    text-shadow: #ffffffe0 0px 0 55px;
+
 }
 
 .InSdDiv {
@@ -78,7 +80,28 @@
     font-size: 12px;
     gap: 3px;
     color: #ec3235;
-    text-shadow: #ec3235 1px 0 15px;
+    text-shadow: #f5262a 1px 0 15px;
     text-align: center;
     transform: translateY(2px);
+    animation: pulseShadowPrivate 1.5s infinite ease-in-out;
 }
+
+@keyframes pulseShadowPrivate {
+    0% {
+      text-shadow: #f5262a 1px 0 15px;
+    }
+    50% {
+      text-shadow: #911e20 1px 0 25px;
+    }
+    100% {
+      text-shadow: #f5262a 1px 0 15px;
+    }
+  }
+
+  .BeTMoneyText {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 5px;
+    left: 16rem;
+  }
