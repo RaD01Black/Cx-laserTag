@@ -106,10 +106,18 @@
     left: 16rem;
   }
 
-  .RoundsText {
+.RoundsText {
     display: flex;
     flex-direction: column;
     position: absolute;
     gap: 5px;
     left: 26rem;
-  }
+}
+
+.CurrentCreatorPtag {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 5px;
+    left: 36rem;
+}
