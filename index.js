@@ -80,7 +80,6 @@ function pageHandler(page) {
     if (p === page) {
       el.style.display = 'flex';
 
-      // 🔹 Run animation depending on which page is open
       if (p === 'SettingLobby') {
         replayLobbyAnimation();
       } else if (p === 'LeaderBoardPage') {
@@ -404,7 +403,6 @@ document.querySelectorAll('.SteamPlayerNameSteam').forEach(el => {
 document.addEventListener("DOMContentLoaded", () => {
   const rooms = document.querySelectorAll(".RoomBoxDiv");
 
-  // Set first one active
   if (rooms.length > 0) rooms[0].classList.add("active");
 
   rooms.forEach(room => {
@@ -430,8 +428,6 @@ document.querySelectorAll(".input-containerPassword").forEach(container => {
   });
 
   input.addEventListener("input", () => {
-    // Just handle password logic, no span updates
-    // You can still add any custom logic here if needed
   });
 
   input.addEventListener("blur", () => {
