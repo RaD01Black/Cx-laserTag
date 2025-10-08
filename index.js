@@ -388,3 +388,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+document.querySelectorAll(".input-containerPassword").forEach(container => {
+  const input = container.querySelector("input");
+
+  if (!input) return;
+
+  const DEFAULT = "Password";
+
+  input.addEventListener("focus", () => {
+    if (input.value === DEFAULT) {
+      input.value = "";
+    }
+  });
+
+  input.addEventListener("input", () => {
+    // Just handle password logic, no span updates
+    // You can still add any custom logic here if needed
+  });
+
+  input.addEventListener("blur", () => {
+    if (input.value.trim() === "") {
+      input.value = DEFAULT;
+    }
+  });
+});

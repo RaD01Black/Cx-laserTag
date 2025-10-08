@@ -809,11 +809,16 @@
                     <p class="UsenameCreatorP">TownHall</p>
                 </div>
 
-                <div class="JoinLobbyButton">
+                <div class="JoinLobbyButton" data-modal-target="#PrivatePasswordModal">
                     <div class="RedButton">
                         <div class="InsideRedButton">
                             <div class="LineTopJoin"></div>
-                            <p>Join Lobby</p>
+                            <div class="RequestJoinLobby">
+                                <svg width="15" height="14" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.33333 9.16675V5.83341C6.33333 4.72835 6.77232 3.66854 7.55372 2.88714C8.33512 2.10573 9.39493 1.66675 10.5 1.66675C11.6051 1.66675 12.6649 2.10573 13.4463 2.88714C14.2277 3.66854 14.6667 4.72835 14.6667 5.83341V9.16675M4.66667 9.16675H16.3333C17.2538 9.16675 18 9.91294 18 10.8334V16.6667C18 17.5872 17.2538 18.3334 16.3333 18.3334H4.66667C3.74619 18.3334 3 17.5872 3 16.6667V10.8334C3 9.91294 3.74619 9.16675 4.66667 9.16675Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p>Request</p>
+                            </div>
                             <div class="LineBottomJoin"></div>
                         </div>
                     </div>
@@ -821,7 +826,12 @@
                     <div class="NormalButton">
                         <div class="InsideNormalButton">
                             <div class="LineTopJoinNormal"></div>
-                            <p>Join Lobby</p>
+                            <div class="RequestJoinLobby">
+                                <svg width="15" height="14" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.33333 9.16675V5.83341C6.33333 4.72835 6.77232 3.66854 7.55372 2.88714C8.33512 2.10573 9.39493 1.66675 10.5 1.66675C11.6051 1.66675 12.6649 2.10573 13.4463 2.88714C14.2277 3.66854 14.6667 4.72835 14.6667 5.83341V9.16675M4.66667 9.16675H16.3333C17.2538 9.16675 18 9.91294 18 10.8334V16.6667C18 17.5872 17.2538 18.3334 16.3333 18.3334H4.66667C3.74619 18.3334 3 17.5872 3 16.6667V10.8334C3 9.91294 3.74619 9.16675 4.66667 9.16675Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p>Request</p>
+                            </div>
                             <div class="LineBottomJoinNormal"></div>
                         </div>
                     </div>
@@ -834,7 +844,7 @@
                     <p class="CreatorPtag">Creator</p>
                     <div class="InSdDiv">
                         <p class="UsenameCreatorP">Canx Player</p>
-                        <div class="PrivateDiv">
+                        <div class="PrivateDiv PrivateDisplayNone">
                             <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.08333 6.41675V4.08341C4.08333 3.30987 4.39062 2.568 4.93761 2.02102C5.48459 1.47404 6.22645 1.16675 7 1.16675C7.77355 1.16675 8.51541 1.47404 9.06239 2.02102C9.60938 2.568 9.91667 3.30987 9.91667 4.08341V6.41675M2.91667 6.41675H11.0833C11.7277 6.41675 12.25 6.93908 12.25 7.58341V11.6667C12.25 12.3111 11.7277 12.8334 11.0833 12.8334H2.91667C2.27233 12.8334 1.75 12.3111 1.75 11.6667V7.58341C1.75 6.93908 2.27233 6.41675 2.91667 6.41675Z" stroke="#EC2D30" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
@@ -942,7 +952,7 @@
                     <p class="CreatorPtag">Creator</p>
                     <div class="InSdDiv">
                         <p class="UsenameCreatorP">Canx Player</p>
-                        <div class="PrivateDiv">
+                        <div class="PrivateDiv PrivateDisplayNone">
                             <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.08333 6.41675V4.08341C4.08333 3.30987 4.39062 2.568 4.93761 2.02102C5.48459 1.47404 6.22645 1.16675 7 1.16675C7.77355 1.16675 8.51541 1.47404 9.06239 2.02102C9.60938 2.568 9.91667 3.30987 9.91667 4.08341V6.41675M2.91667 6.41675H11.0833C11.7277 6.41675 12.25 6.93908 12.25 7.58341V11.6667C12.25 12.3111 11.7277 12.8334 11.0833 12.8334H2.91667C2.27233 12.8334 1.75 12.3111 1.75 11.6667V7.58341C1.75 6.93908 2.27233 6.41675 2.91667 6.41675Z" stroke="#EC2D30" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
@@ -990,6 +1000,25 @@
                 </div>
             </div>
 
+        </div>
+      </div>
+
+
+      <div class="modal" id="PrivatePasswordModal">
+        <div class="modal-contentPassword">
+          <svg class="close" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.02872 9.60248L5.31079 6.58392L2.01073 9.5553C1.64773 9.88215 1.10611 9.87791 0.807137 9.54586C0.508165 9.21382 0.560556 8.67473 0.923562 8.34787L4.22362 5.37649L1.50569 2.35792C1.20671 2.02588 1.25911 1.48679 1.62211 1.15993C1.98512 0.833083 2.52674 0.83733 2.82571 1.16937L5.54364 4.18794L8.84369 1.21656C9.2067 0.889704 9.74832 0.893951 10.0473 1.22599C10.3463 1.55804 10.2939 2.09713 9.93086 2.42398L6.63081 5.39537L9.34874 8.41393C9.64771 8.74597 9.59532 9.28507 9.23231 9.61192C8.86931 9.93877 8.32769 9.93453 8.02872 9.60248Z" fill="#D8D8D8"/>
+            </svg>
+            <div class="TopTextPasswordModal  ">
+                <p >Room Password</p>
+                <p >Room Password</p>
+            </div> 
+            <div class="input-containerPassword">
+                <input type="text" value="Password" spellcheck="false">
+                <span class="privateLobbyText">Enter Room Password</span>
+                <div class="LineLittWhite"></div>
+                <div class="WhitlineBottomInput"></div>
+              </div>
         </div>
       </div>
 

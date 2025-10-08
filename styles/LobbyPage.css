@@ -145,25 +145,25 @@
 
 .RoomBoxDiv .RedButton {
   opacity: 0;
-  transform: translateY(1rem) scale(0.95);
+  transform: translateY(1rem) ;
   pointer-events: none;
 }
 
 .RoomBoxDiv .NormalButton {
   opacity: 1;
-  transform: translateY(1rem) scale(1);
+  transform: translateY(1rem) ;
   pointer-events: auto;
 }
 
 .RoomBoxDiv.active .RedButton {
   opacity: 1;
-  transform: translateY(1rem) scale(1);
+  transform: translateY(1rem) ;
   pointer-events: auto;
 }
 
 .RoomBoxDiv.active .NormalButton {
   opacity: 0;
-  transform: translateY(1rem) scale(0.95);
+  transform: translateY(1rem) ;
   pointer-events: none;
 }
 
@@ -297,3 +297,84 @@
   right: 0;
 }
 
+.PrivateDisplayNone {
+  display: none !important;
+}
+
+.RequestJoinLobby {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.modal-contentPassword {
+  background: url(../imgs/badgeModalBg.png) rgba(9, 9, 9, 0.664) ;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(24.2px);
+-webkit-backdrop-filter: blur(24.2px);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 225px;
+  width: 520px;
+  position: relative;
+  animation: slideIn 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TopTextPasswordModal {
+  font-family: "RangerRegular", sans-serif;
+}
+
+.TopTextPasswordModal p:nth-of-type(1) {
+  font-size: 30px;
+  -webkit-text-stroke: 1px #444444;
+  color: transparent;
+  transform: translateX(-1rem) translateY(-2.2rem);
+}
+
+.TopTextPasswordModal p:nth-of-type(2) {
+  font-size: 28px;
+  color: #fff;
+  transform: translateY(-3.3rem) translateX(-5px);
+}
+
+
+.input-containerPassword {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  height: 55px;
+  width: 420px;
+  background: url("../imgs/InputBgDivRed.png") no-repeat center;
+  background-size: cover;
+  transition: transform 0.2s ease;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  cursor: pointer;
+}
+
+.input-containerPassword.active {
+  transform: scale(1.01);
+}
+
+.input-containerPassword input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 900;
+  transform: translateX(1.4rem);
+}
+
+.input-containerPassword span {
+  transform: translateX(-6.5rem);
+  font-size: 12px;
+  color: #ffffffe0;
+}
