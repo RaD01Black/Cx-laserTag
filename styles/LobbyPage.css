@@ -138,113 +138,162 @@
     justify-content: center;
 }
 
+.RoomBoxDiv .RedButton,
+.RoomBoxDiv .NormalButton {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.RoomBoxDiv .RedButton {
+  opacity: 0;
+  transform: translateY(1rem) scale(0.95);
+  pointer-events: none;
+}
+
+.RoomBoxDiv .NormalButton {
+  opacity: 1;
+  transform: translateY(1rem) scale(1);
+  pointer-events: auto;
+}
+
+.RoomBoxDiv.active .RedButton {
+  opacity: 1;
+  transform: translateY(1rem) scale(1);
+  pointer-events: auto;
+}
+
+.RoomBoxDiv.active .NormalButton {
+  opacity: 0;
+  transform: translateY(1rem) scale(0.95);
+  pointer-events: none;
+}
+
 .RedButton {
-    display: flex;
-    width:173px;
-    height: 58px;
-    background-color: #911e204d;
-    transform: translateY(1rem);
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;  
-    transition: all ease .30s;  
+  display: flex;
+  width: 173px;
+  height: 58px;
+  background-color: #911e204d;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.JoinLobbyButton:active {
+    transform: scale(1.05);
 }
 
 .RedButton:hover .LineTopJoin {
-    left: 3rem;
+  left: 3rem;
 }
 
 .RedButton:hover .LineBottomJoin {
-    right: 3rem;
+  right: 3rem;
 }
 
 .InsideRedButton {
-    width:153px;
-    height: 43px;
-    background: #f5262a;
-    position: relative;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "inter", sans-serif;
-    font-weight: 700;
-    font-size: 13px;
+  width: 153px;
+  height: 43px;
+  background: #f5262a;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .LineTopJoin {
-    width: 90px;
-    height: 2px;
-    background: linear-gradient(270deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.812) 50%, rgba(255, 255, 255, 0) 100%);
-    position: absolute;
-        transition: all ease .30s;  
-    top: 0;
-    left: 0;
+  width: 90px;
+  height: 2px;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.812) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  transition: all ease 0.3s;
+  top: 0;
+  left: 0;
 }
 
 .LineBottomJoin {
-    width: 90px;
-    height: 2px;
-    background: linear-gradient(270deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.812) 50%, rgba(255, 255, 255, 0) 100%);
-    position: absolute;
-        transition: all ease .30s;  
-    bottom:  0;
-    right: 0;
+  width: 90px;
+  height: 2px;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.812) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  transition: all ease 0.3s;
+  bottom: 0;
+  right: 0;
 }
 
-
-
 .NormalButton {
-    display: none;
-    width:170px;
-    height: 55px;
-    background-color: #911e2000;
-    transform: translateY(1rem);
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;  
-    transition: all ease .30s;
+  display: flex;
+  width: 170px;
+  height: 55px;
+  background-color: #911e2000;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
 }
 
 .NormalButton:hover .LineTopJoinNormal {
-    left: 3rem;
+  left: 3rem;
 }
 
 .NormalButton:hover .LineBottomJoinNormal {
-    right: 3rem;
+  right: 3rem;
 }
 
 .InsideNormalButton {
-    width:153px;
-    height: 43px;
-    background: #00000083;
-    border: 1px solid #474749de;  
-    position: relative;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "inter", sans-serif;
-    font-weight: 700;
-    font-size: 13px;
+  width: 153px;
+  height: 43px;
+  background: #00000083;
+  border: 1px solid #474749de;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .LineTopJoinNormal {
-    width: 90px;
-    height: 1px;
-    background: linear-gradient(270deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.812) 50%, rgba(255, 255, 255, 0) 100%);
-    position: absolute;
-        transition: all ease .30s;  
-    top: 0;
-    left: 0;
+  width: 90px;
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.812) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  transition: all ease 0.3s;
+  top: 0;
+  left: 0;
 }
 
 .LineBottomJoinNormal {
-    width: 90px;
-    height: 1px;
-    background: linear-gradient(270deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.812) 50%, rgba(255, 255, 255, 0) 100%);
-    position: absolute;
-        transition: all ease .30s;  
-    bottom:  0;
-    right: 0;
+  width: 90px;
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.812) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  transition: all ease 0.3s;
+  bottom: 0;
+  right: 0;
 }
+

@@ -374,3 +374,17 @@ document.querySelectorAll('.SteamPlayerNameSteam').forEach(el => {
     el.textContent = text.substring(0, 23) + '..';
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const rooms = document.querySelectorAll(".RoomBoxDiv");
+
+  // Set first one active
+  if (rooms.length > 0) rooms[0].classList.add("active");
+
+  rooms.forEach(room => {
+    room.addEventListener("mouseenter", () => {
+      rooms.forEach(r => r.classList.remove("active"));
+      room.classList.add("active");
+    });
+  });
+});
