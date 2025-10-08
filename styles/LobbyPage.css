@@ -119,5 +119,13 @@
     flex-direction: column;
     position: absolute;
     gap: 5px;
-    left: 36rem;
+    left: 35rem;
+}
+
+.MapSelectPtag {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 5px;
+    left: 44rem;
 }
