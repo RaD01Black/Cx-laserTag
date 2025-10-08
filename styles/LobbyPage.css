@@ -146,14 +146,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    
+    cursor: pointer;  
+    transition: all ease .30s;  
+}
+
+.RedButton:hover .LineTopJoin {
+    left: 3rem;
+}
+
+.RedButton:hover .LineBottomJoin {
+    right: 3rem;
 }
 
 .InsideRedButton {
     width:150px;
     height: 40px;
     background: #f5262a;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "inter", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
 }
 
 .LineTopJoin {
@@ -161,6 +177,17 @@
     height: 2px;
     background: linear-gradient(270deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.812) 50%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
-    transition: transform 0.4s ease; 
+        transition: all ease .30s;  
+    top: 0;
+    left: 0;
 }
 
+.LineBottomJoin {
+    width: 90px;
+    height: 2px;
+    background: linear-gradient(270deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.812) 50%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+        transition: all ease .30s;  
+    bottom:  0;
+    right: 0;
+}
