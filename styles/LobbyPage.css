@@ -309,7 +309,7 @@
   gap: 10px;
 }
 .modal-contentPassword {
-  background: url(../imgs/badgeModalBg.png) rgba(9, 9, 9, 0.664) ;
+  background: url(../imgs/badgeModalBg.png) rgba(0, 0, 0, 0.84) ;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(24.2px);
 -webkit-backdrop-filter: blur(24.2px);
@@ -327,6 +327,8 @@ backdrop-filter: blur(24.2px);
 
 .TopTextPasswordModal {
   font-family: "RangerRegular", sans-serif;
+  position: absolute;
+  top: 3.5rem;
 }
 
 .TopTextPasswordModal p:nth-of-type(1) {
@@ -377,4 +379,28 @@ backdrop-filter: blur(24.2px);
   transform: translateX(-6.5rem);
   font-size: 12px;
   color: #ffffffe0;
+}
+
+.NormalButtonJoinPass {
+  display: flex;
+  width: 170px;
+  height: 55px;
+  background-color: #911e2000;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: .8rem;
+}
+
+.NormalButtonJoinPass:hover .LineTopJoinNormal {
+  left: 3rem;
+}
+
+.NormalButtonJoinPass:hover .LineBottomJoinNormal {
+  right: 3rem;
+}
+
+.NormalButtonJoinPass:active {
+  transform: scale(1.02);
 }
