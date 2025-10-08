@@ -16,7 +16,7 @@
 
 .RoomsDivsSection {
     min-width: 66rem;
-    max-height: 44rem;
+    max-height: 43.4rem;
     top: 28vh;
     position: absolute;
     left: 4vw;
@@ -30,7 +30,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 65rem;
-    height: 5.6rem;
+    min-height: 5.6rem;
     position: relative;
     overflow: hidden;
     display: flex;

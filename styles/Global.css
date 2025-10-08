@@ -131,3 +131,24 @@
     padding-right: 8px; 
     transform: translateX(5px);
   }
+
+  .custom-scrollbarLobbyPage::-webkit-scrollbar {
+    width: 4px;
+    height: 120px !important;
+    margin-left: 130px;
+  }
+  
+  .custom-scrollbarLobbyPage::-webkit-scrollbar-thumb {
+    background-color: #dc0000;
+    border-radius: 4px;
+  }
+  
+  .custom-scrollbarLobbyPage::-webkit-scrollbar-track {
+    background-color: #181818;
+  }
+  
+  .custom-scrollbarLobbyPage {
+    overflow-y: auto;
+    padding-right: 8px; 
+    transform: translateX(5px);
+  }
