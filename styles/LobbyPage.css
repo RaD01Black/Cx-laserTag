@@ -15,17 +15,33 @@
 }
 
 .RoomsDivsSection {
-    width: 65rem;
+    min-width: 66rem;
     max-height: 44rem;
     top: 28vh;
     position: absolute;
     left: 4vw;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
 }
 
 .RoomBoxDiv {
-    background: url(../imgs/RoomBgBoxs.png);
+    background: url(../imgs/RoomBgBoxs.png) ;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 65rem;
-    min-height: 5.6rem;
+    height: 5.6rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LobbyImageTag {
+    width: 65rem;
+    height: 5.6rem;
+    border-radius: 4px;
+    position: absolute;
+    left: 0px;
 }
