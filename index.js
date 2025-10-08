@@ -47,6 +47,29 @@ function replayLeaderBoardAnimation() {
   });
 }
 
+function replayLobbysAnimation() {
+  const lobbyListRoot =
+    document.getElementById('LobbysPage') ||
+    document.querySelector('.LobbysPage') ||
+    document;
+
+  const targets = lobbyListRoot.querySelectorAll('.RoomBoxDiv');
+  if (!targets.length) return;
+
+  gsap.killTweensOf(targets);
+  gsap.set(targets, { opacity: 0 });
+
+  requestAnimationFrame(() => {
+    gsap.to(targets, {
+      opacity: 1,
+      duration: 0.8,
+      stagger: 0.15,
+      ease: 'power1.out',
+      overwrite: 'auto'
+    });
+  });
+}
+
 function pageHandler(page) {
   const pages = ['homepage', 'SettingLobby', 'LeaderBoardPage', 'LobbysPage'];
 
@@ -57,10 +80,13 @@ function pageHandler(page) {
     if (p === page) {
       el.style.display = 'flex';
 
+      // 🔹 Run animation depending on which page is open
       if (p === 'SettingLobby') {
         replayLobbyAnimation();
       } else if (p === 'LeaderBoardPage') {
         replayLeaderBoardAnimation();
+      } else if (p === 'LobbysPage') {
+        replayLobbysAnimation();
       }
 
     } else {
@@ -102,7 +128,7 @@ mapDivs.forEach(div => {
 });
 
 
-document.querySelectorAll(".input-container").forEach(container => {
+document.querySelectorAll(".input-container, .input-containerPassword").forEach(container => {
   const input = container.querySelector("input"); 
   const whiteLine = container.querySelector(".WhitlineBottomInput");
 
