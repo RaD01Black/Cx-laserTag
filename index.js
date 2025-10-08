@@ -342,7 +342,6 @@ function closeModal(modal) {
   });
 }
 
-// Open buttons
 document.querySelectorAll("[data-modal-target]").forEach(btn => {
   btn.addEventListener("click", () => {
     const target = document.querySelector(btn.dataset.modalTarget);
@@ -350,7 +349,6 @@ document.querySelectorAll("[data-modal-target]").forEach(btn => {
   });
 });
 
-// Close buttons
 document.querySelectorAll(".modal .close").forEach(closeBtn => {
   closeBtn.addEventListener("click", () => {
     const modal = closeBtn.closest(".modal");
@@ -358,14 +356,12 @@ document.querySelectorAll(".modal .close").forEach(closeBtn => {
   });
 });
 
-// Click outside to close
 window.addEventListener("click", (e) => {
   if (e.target.classList.contains("modal")) {
     closeModal(e.target);
   }
 });
 
-// ESC key to close any open modal
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     document.querySelectorAll(".modal.is-open").forEach(m => closeModal(m));
