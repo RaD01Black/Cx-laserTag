@@ -71,7 +71,7 @@ function replayLobbysAnimation() {
 }
 
 function pageHandler(page) {
-  const pages = ['homepage', 'SettingLobby', 'LeaderBoardPage', 'LobbysPage'];
+  const pages = ['homepage', 'SettingLobby', 'LeaderBoardPage', 'LobbysPage', 'RoomPage'];
 
   pages.forEach(p => {
     const el = document.getElementById(p) || document.querySelector('.' + p);
