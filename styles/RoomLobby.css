@@ -215,6 +215,9 @@
     background-size: contain;
     width: 32.9rem;
     height: 30.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .RoundsRoomDetail {
@@ -303,3 +306,12 @@
     font-weight: 800;
     text-shadow: #ffffffd2 1px 0 50px;
 }
+
+.InsideRoomMapImage {
+    width: 91%;
+    height:330px;
+    position: absolute;
+    top: 1.5rem;
+    border-radius: 8px;
+}
+
