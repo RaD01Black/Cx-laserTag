@@ -32,9 +32,30 @@
 }
 
 .GreenBottomRoom {
-    width: 16rem;
+    width: 17rem;
     height: 3.7rem;
     background: linear-gradient(180deg,rgba(33, 128, 254, 0) 0%, rgba(33, 128, 254, 0) 50%, rgba(0, 255, 8, 0.1) 100%);
-    border: .5px solid #153c1a76;
+    border: .9px solid #153c1a76;
     position: relative;
+    cursor: pointer;
 }
+
+.GreenBottomLine {
+  height: 0.8px;
+  width: 8rem;
+  position: absolute;
+  bottom: 0; 
+  right: 10px;
+  background: #00FF08;
+  background: linear-gradient(90deg, rgba(0, 255, 8, 0) 0%, rgba(0, 255, 8, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.GreenTopLine {
+    height: 0.8px;
+    width: 8rem;
+    position: absolute;
+    top: 0; 
+    left: 10px;
+    background: #00FF08;
+    background: linear-gradient(90deg, rgba(0, 255, 8, 0) 0%, rgba(0, 255, 8, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  }
