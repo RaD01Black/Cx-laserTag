@@ -20,3 +20,8 @@
     right: 25vw;
     animation: floatAround 4s infinite ease-in-out;
 }
+
+.InsideDetailsRoomLobby {
+    display: flex;
+    flex-direction: row;
+}
