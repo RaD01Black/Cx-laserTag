@@ -319,27 +319,23 @@
 .LeftRoomDetail {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .TopTextRoomLobby {
     font-family: "RangerRegular", sans-serif;
-    position: absolute;
-    left: 4.5vw;
-    top: 10vh;
   }
   
   .FirstPRoom {
     -webkit-text-stroke: 1px #444444;
-    font-size: 48px;
-    width: 100vw;
+    font-size: 47px;
     color: transparent;
-    transform: translateX(-1rem) translateY(-2.2rem);
+    transform: translateX(0rem) translateY(-2.3rem);
   }
   .SecondPRoom {
     transform: translateY(-4.2rem) !important;
     color: #fff;
     font-size: 45px;
-    width: 100vw;
     text-shadow: 
     #ffffff 0px 0px 40px,
     #ffffff 0px 0px 80px;
