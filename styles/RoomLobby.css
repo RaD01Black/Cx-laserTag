@@ -29,16 +29,25 @@
 .BottomOfmapRoomDetail {
     display: flex;
     flex-direction: row;
+    gap: 15px;
 }
 
 .GreenBottomRoom {
-    width: 17rem;
+    width: 16rem;
     height: 3.7rem;
     background: linear-gradient(180deg,rgba(33, 128, 254, 0) 0%, rgba(33, 128, 254, 0) 50%, rgba(0, 255, 8, 0.1) 100%);
     border: .9px solid #153c1a76;
     position: relative;
     cursor: pointer;
     transition: all ease .30s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.GreenBottomRoom:hover {
+    transform: scale(1.02);
 }
 
 .GreenBottomRoom:active {
@@ -46,16 +55,16 @@
 }
 
 .GreenBottomRoom:hover .GreenBottomLine {
-    right: 66px;
+    right: 65px;
 }
 
 .GreenBottomRoom:hover .GreenTopLine {
-    left: 66px;
+    left: 65px;
 }
 
 .GreenBottomLine {
   height: 0.8px;
-  width: 8rem;
+  width: 7.5rem;
   position: absolute;
   bottom: 0; 
   right: 10px;
@@ -66,11 +75,35 @@
 
 .GreenTopLine {
     height: 0.8px;
-    width: 8rem;
+    width: 7.5rem;
     position: absolute;
     top: 0; 
     left: 10px;
     background: #00FF08;
     background: linear-gradient(90deg, rgba(0, 255, 8, 0) 0%, rgba(0, 255, 8, 1) 50%, rgba(0, 0, 0, 0) 100%);
     transition: left ease .40s;
-  }
+}
+
+.InsideGreenButton {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.InsideGreenButton p { 
+    font-family: "inter", sans-serif;
+    color: #00FF08;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#StartGameText {
+    display: none;
+}
+
+#SetReadyText {
+    display: flex;
+}
