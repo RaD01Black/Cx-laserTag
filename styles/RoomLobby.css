@@ -236,4 +236,38 @@
     font-family: "Afacad", sans-serif;
     font-size: 20px;
     font-weight: 800;
+    text-shadow: #ffffffd2 1px 0 50px;
+}
+
+.WhiteLineInsideRoomDetail {
+    width: 1px;
+    height: 60px;
+    background: #ffffff;
+    background: linear-gradient(0deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    bottom: 2.5rem;
+    left: 10rem;
+}
+
+
+.GunsRoomDetail {
+    position: absolute;
+    left: 12.5rem;
+    bottom: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.GunsRoomDetail p:nth-of-type(1) {
+    font-family: "Roboto", sans-serif;
+    color: #828283;
+    font-size: 12px;
+}
+
+.GunsRoomDetail p:nth-of-type(2) {
+    font-family: "Afacad", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: #ffffffd2 1px 0 50px;
 }
