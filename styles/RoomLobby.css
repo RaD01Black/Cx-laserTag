@@ -202,9 +202,21 @@
     color: #fc1a1ac1;
 }
 
-.RightRoomDetailBg {
-    background: url(../imgs/BgRoomDetails.png) ;
-    background-repeat: no-repeat;
-    width: 32.9rem;
-    height: 30rem;
+.RightRoomDetail {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    right: 5rem;
+    bottom: 10rem;
 }
+
+.RightRoomDetailBg {
+    background: url(../imgs/BgRoomDetails.png);
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32.9rem;
+    height: 30.6rem;
+}
+
