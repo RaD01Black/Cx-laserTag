@@ -271,3 +271,13 @@
     font-weight: 800;
     text-shadow: #ffffffd2 1px 0 50px;
 }
+
+.WhiteLineInsideRoomDetail2 {
+    width: 1px;
+    height: 60px;
+    background: #ffffff;
+    background: linear-gradient(0deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    bottom: 2.5rem;
+    left: 20rem;
+}
