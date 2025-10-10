@@ -176,7 +176,7 @@
     
 }
 
-.InsideRedButton {
+.InsideRedButtonRoom {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +190,7 @@
 
 }
 
-.InsideRedButton p { 
+.InsideRedButtonRoom p { 
     font-family: "inter", sans-serif;
     color: #FC1A1A;
     font-weight: 700;
@@ -316,3 +316,7 @@
     object-fit: cover;
 }
 
+.LeftRoomDetail {
+    display: flex;
+    flex-direction: column;
+}
