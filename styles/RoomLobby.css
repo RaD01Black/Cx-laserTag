@@ -13,3 +13,10 @@
     color: #fff;
     overflow: hidden;
 }
+
+.BottomVector2 {
+    position: absolute;
+    top: 8vh;
+    right: 25vw;
+    animation: floatAround 4s infinite ease-in-out;
+}
