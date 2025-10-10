@@ -201,3 +201,10 @@
 .RedBottomRoom:hover .InsideRedButton p {
     color: #fc1a1ac1;
 }
+
+.RightRoomDetailBg {
+    background: url(../imgs/BgRoomDetails.png) ;
+    background-repeat: no-repeat;
+    width: 32.9rem;
+    height: 30rem;
+}
