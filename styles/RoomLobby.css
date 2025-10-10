@@ -98,6 +98,11 @@
     color: #00FF08;
     font-weight: 700;
     font-size: 15px;
+    transition: color ease .30s;
+}
+
+.GreenBottomRoom:hover .InsideGreenButton p {
+    color: #00ff08d4;
 }
 
 #StartGameText {
@@ -190,4 +195,9 @@
     color: #FC1A1A;
     font-weight: 700;
     font-size: 15px;
+    transition: color ease .30s;
+}
+
+.RedBottomRoom:hover .InsideRedButton p {
+    color: #fc1a1ac1;
 }
