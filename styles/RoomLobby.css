@@ -344,17 +344,21 @@
 
 .EditeLobbyButton {
     font-family: inherit;
-    font-size: 20px;
+    font-size: 14px;
     background: #191919;
     color: white;
-    padding: 0.7em 1em;
-    padding-left: 0.9em;
+    width: 8.5rem;
+    height: 3rem;
+    text-align: center;
     display: flex;
+    justify-content: center;
     align-items: center;
     border: 1px solid #303030;
     overflow: hidden;
     transition: all 0.2s;
     cursor: pointer;
+    gap: 5px;
+    transform: translateY(-2.3rem);
   }
   
   .EditeLobbyButton span {
@@ -374,15 +378,15 @@
   }
   
   .EditeLobbyButton:hover svg {
-    transform: translateX(1.2em)  scale(1.1);
+    transform: translateX(2.4em)  scale(1.1);
   }
   
   .EditeLobbyButton:hover span {
-    transform: translateX(5em);
+    transform: translateX(6.5em);
   }
   
   .EditeLobbyButton:active {
-    transform: scale(0.95);
+    transform:translateY(-2.3rem)  translate(2px , 2px);
   }
   
   @keyframes fly-1 {
@@ -395,3 +399,8 @@
     }
   }
   
+
+  .RoomNameLobbyDeatails {
+    display: flex;
+    flex-direction: row;
+  }
