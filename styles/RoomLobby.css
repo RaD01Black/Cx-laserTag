@@ -344,11 +344,11 @@
 
 .EditeLobbyButton {
     font-family: inherit;
-    font-size: 14px;
+    font-size: 13px;
     background: #191919;
     color: white;
     width: 8.5rem;
-    height: 3rem;
+    height: 2.7rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -358,7 +358,7 @@
     transition: all 0.2s;
     cursor: pointer;
     gap: 5px;
-    transform: translateY(-2.3rem);
+    transform: translateY(-1.9rem);
   }
   
   .EditeLobbyButton span {
@@ -378,11 +378,11 @@
   }
   
   .EditeLobbyButton:hover svg {
-    transform: translateX(2.4em)  scale(1.1);
+    transform: translateX(2.8em)  scale(1.1);
   }
   
   .EditeLobbyButton:hover span {
-    transform: translateX(6.5em);
+    transform: translateX(6.8em);
   }
   
   .EditeLobbyButton:active {
@@ -403,4 +403,5 @@
   .RoomNameLobbyDeatails {
     display: flex;
     flex-direction: row;
+    gap: 20px;
   }
