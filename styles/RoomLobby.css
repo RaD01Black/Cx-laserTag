@@ -206,6 +206,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    transform: translateY(6rem);
 }
 
 .RightRoomDetailBg {
@@ -416,6 +417,7 @@
   .BlueAndRedDivTeam {
     display: flex;
     flex-direction: column;
+    gap: 7px;
   }
 
   .TeamDiv {
