@@ -436,3 +436,10 @@ document.querySelectorAll(".input-containerPassword").forEach(container => {
     }
   });
 });
+
+document.querySelectorAll('.UserSteamPLayernameRoom').forEach(el => {
+  const text = el.textContent.trim();
+  if (text.length > 13) {
+    el.textContent = text.slice(0, 13) + '..';
+  }
+});

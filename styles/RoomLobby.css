@@ -655,4 +655,21 @@
 .UserNameSteamDiv img {
     width: 18px;
     filter: drop-shadow(0 0 0.75rem rgb(221, 195, 0));
+    animation: pulseShadowCrown 2.5s infinite ease-in-out;
 }
+
+@keyframes pulseShadowCrown {
+    0% {
+      filter: drop-shadow(0 0 0.75rem rgb(221, 195, 0));
+    }
+    50% {
+      filter: drop-shadow(0 0 1.5rem rgb(221, 195, 0));
+    }
+    100% {
+      filter: drop-shadow(0 0 0.75rem rgb(221, 195, 0));
+    }
+  }
+
+  .displayNone {
+    display: none !important;
+  }
