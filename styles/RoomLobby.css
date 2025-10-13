@@ -522,10 +522,42 @@
    position: absolute;
    top: 2rem;
    left: 2rem;
+   width: 100%;
+}
+
+.LeftDetailTeamTexts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+   width: 100%;
 }
 
 .LeftDetailTeamTexts h3 {
     font-family: "RangerRegular", sans-serif;
     font-weight: 100;
     color: #0088FF;
+    text-shadow: #0088FF 1px 0 30px;
+}
+
+.LeftDetailTeamTexts p {
+    font-size: 12.5px;
+    color: #8b8b8b;
+}
+
+.JoinTeamButton {
+    margin-right: 4rem;
+    font-size: 13.6px;
+    width: 11rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(176, 176, 176, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.2px);
+    -webkit-backdrop-filter: blur(13.2px);
+    cursor: pointer;
+    border: 1px #3e3e3e solid;
+    font-family: "inter" , sans-serif;
 }
