@@ -34,8 +34,8 @@
 }
 
 .GreenBottomRoom {
-    width: 16rem;
-    height: 3.7rem;
+    width: 19.3rem;
+    height: 3.6rem;
     background: linear-gradient(180deg,rgba(33, 128, 254, 0) 0%, rgba(33, 128, 254, 0) 50%, rgba(0, 255, 8, 0.1) 100%);
     border: .9px solid #153c1a76;
     position: relative;
@@ -56,16 +56,16 @@
 }
 
 .GreenBottomRoom:hover .GreenBottomLine {
-    right: 65px;
+    right: 85px;
 }
 
 .GreenBottomRoom:hover .GreenTopLine {
-    left: 65px;
+    left: 90px;
 }
 
 .GreenBottomLine {
-  height: 0.8px;
-  width: 7.5rem;
+  height: 1px;
+  width: 7.7rem;
   position: absolute;
   bottom: 0; 
   right: 10px;
@@ -75,8 +75,8 @@
 }
 
 .GreenTopLine {
-    height: 0.8px;
-    width: 7.5rem;
+    height: 1px;
+    width: 7.7rem;
     position: absolute;
     top: 0; 
     left: 10px;
@@ -124,8 +124,8 @@
 
 
 .RedBottomRoom {
-    width: 16rem;
-    height: 3.7rem;
+    width: 19.3rem;
+    height: 3.6rem;
     background: #FF1A1A;
     background: linear-gradient(168deg,rgba(255, 26, 26, 0) 0%, rgba(255, 26, 26, 0.03) 50%, rgba(255, 26, 26, 0.2) 100%);
     border: .9px solid #401e1ea1;
@@ -147,16 +147,17 @@
 }
 
 .RedBottomRoom:hover .RedBottomLine {
-    right: 65px;
+    right: 82px;
 }
 
 .RedBottomRoom:hover .RedTopLine {
-    left: 65px;
+    left: 100px;
+
 }
 
 .RedBottomLine {
-  height: 0.8px;
-  width: 7.5rem;
+    height: 1px;
+    width: 7.7rem;
   position: absolute;
   bottom: 0; 
   right: 10px;
@@ -166,8 +167,8 @@
 }
 
 .RedTopLine {
-    height: 0.8px;
-    width: 7.5rem;
+    height: 1px;
+    width: 7.7rem;
     position: absolute;
     top: 0; 
     left: 10px;
@@ -207,16 +208,16 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    transform: translateY(6rem);
+    transform: translateY(6.4rem);
 }
 
 .RightRoomDetailBg {
     background: url(../imgs/BgRoomDetails.png);
     backdrop-filter: blur(10px);
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 32.9rem;
-    height: 30.6rem;
+    background-size: cover;
+    width: 632px;
+    height: 588px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,12 +235,12 @@
 .RoundsRoomDetail p:nth-of-type(1) {
     font-family: "Roboto", sans-serif;
     color: #828283;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .RoundsRoomDetail p:nth-of-type(2) {
     font-family: "Afacad", sans-serif;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 800;
     text-shadow: #ffffffd2 1px 0 50px;
 }
@@ -251,13 +252,13 @@
     background: linear-gradient(0deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
     bottom: 2.5rem;
-    left: 10rem;
+    left: 12rem;
 }
 
 
 .GunsRoomDetail {
     position: absolute;
-    left: 12.5rem;
+    left: 15.5rem;
     bottom: 2.8rem;
     display: flex;
     flex-direction: column;
@@ -267,12 +268,12 @@
 .GunsRoomDetail p:nth-of-type(1) {
     font-family: "Roboto", sans-serif;
     color: #828283;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .GunsRoomDetail p:nth-of-type(2) {
     font-family: "Afacad", sans-serif;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 800;
     text-shadow: #ffffffd2 1px 0 50px;
 }
@@ -284,12 +285,12 @@
     background: linear-gradient(0deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
     bottom: 2.5rem;
-    left: 20rem;
+    left: 25rem;
 }
 
 .MapRoomDetail {
     position: absolute;
-    left:22.5rem;
+    left:28rem;
     bottom: 2.8rem;
     display: flex;
     flex-direction: column;
@@ -299,19 +300,19 @@
 .MapRoomDetail p:nth-of-type(1) {
     font-family: "Roboto", sans-serif;
     color: #828283;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .MapRoomDetail p:nth-of-type(2) {
     font-family: "Afacad", sans-serif;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 800;
     text-shadow: #ffffffd2 1px 0 50px;
 }
 
 .InsideRoomMapImage {
     width: 91%;
-    height:330px;
+    height:420px;
     position: absolute;
     top: 1.5rem;
     border-radius: 8px;
@@ -418,7 +419,7 @@
   .BlueAndRedDivTeam {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 8px;
   }
 
   .RedSvgBehindImg {
