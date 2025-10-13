@@ -620,3 +620,17 @@
     bottom: 0;
     display: flex;
 }
+
+.IdAndKdDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.IdAndKdDiv p {
+
+}
