@@ -602,6 +602,16 @@
     cursor: pointer;
 }
 
+.BlueLineBottomBoxPLayer {
+    background: #0088FF;
+    background: linear-gradient(90deg,rgba(255, 26, 26, 0) 0%, #0088FF 50%, rgba(0, 0, 0, 0) 100%);
+    width: 70%;
+    height: 1.2px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+
 .RedLineBottomBoxPLayer {
     background: #FF1A1A;
     background: linear-gradient(90deg,rgba(255, 26, 26, 0) 0%, rgba(255, 26, 26, 1) 50%, rgba(0, 0, 0, 0) 100%);
@@ -609,7 +619,7 @@
     height: 1.2px;
     position: absolute;
     bottom: 0;
-    display: none;
+    display: flex;
 }
 
 .ReadyLineBottomBoxPLayer {
@@ -619,7 +629,7 @@
     height: 1.2px;
     position: absolute;
     bottom: 0;
-    display: flex;
+    display: none;
 }
 
 .IdAndKdDiv {
@@ -674,6 +684,9 @@
   .displayNone {
     display: none !important;
   }
+  .displayFlex {
+    display: flex !important;
+  }
 
   .SteamProfileAllDiv {
     transform: translateY(-5px);
@@ -705,4 +718,26 @@
   .SteamBGLine {
     position: absolute;
     transform: translateX(-1.6rem) translateY(-4.05rem);
+  }
+
+  .OwnerShipHoevrDiv {
+    position: absolute;
+    background: #141313;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #141313 55%);
+    width: 10.6rem;
+    height: 8rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .kickSetOwnerDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
   }
