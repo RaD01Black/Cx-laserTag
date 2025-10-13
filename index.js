@@ -443,3 +443,19 @@ document.querySelectorAll('.UserSteamPLayernameRoom').forEach(el => {
     el.textContent = text.slice(0, 13) + '..';
   }
 });
+
+const boxes = document.querySelectorAll('.PlayerBoxRoom');
+const hovers = document.querySelectorAll('.OwnerShipHoevrDiv');
+
+boxes.forEach(box => {
+  const id = box.getAttribute('data-id');
+  const hover = document.querySelector(`.OwnerShipHoevrDiv[data-id="${id}"]`);
+
+  box.addEventListener('mouseenter', () => {
+    hover.style.transform = 'translateY(0)';
+  });
+
+  box.addEventListener('mouseleave', () => {
+    hover.style.transform = 'translateY(12rem)';
+  });
+});
