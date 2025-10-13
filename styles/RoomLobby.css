@@ -410,8 +410,8 @@
   }
 
   .BetMoneyLobbyText {
-    transform: translateY(-3.4rem);
-    font-size: 22px;
+    transform: translateY(-1.8rem);
+    font-size: 20px;
     font-family: "Roboto", sans-serif;
     color: #8d8d8d;
   }
@@ -540,6 +540,13 @@
     text-shadow: #0088FF 1px 0 30px;
 }
 
+.RedTeamTextH3 {
+    font-family: "RangerRegular", sans-serif;
+    font-weight: 100;
+    color: #EC2D30 !important;
+    text-shadow: #EC2D30 1px 0 30px !important; 
+}
+
 .LeftDetailTeamTexts p {
     font-size: 12.5px;
     color: #8b8b8b;
@@ -570,5 +577,21 @@
 }
 
 .JoinTeamButton:active {
-    transform:translate(1px , 1px);
+    transform:translate(2px , 2px);
+}
+
+.PlayersBoxesRoom {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.PlayerBoxRoom {
+    width: 10.6rem;
+    height:13rem;
+    background: #3C3C3C;
+    background: linear-gradient(180deg, rgba(60, 60, 60, 0) 0%, rgba(60, 60, 60, 0.2) 100%);
 }
