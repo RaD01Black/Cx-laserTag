@@ -389,7 +389,7 @@
   }
   
   .EditeLobbyButton:active {
-    transform:translateY(-2.3rem)  translate(2px , 2px);
+    transform:translateY(-2.3rem)  translate(1px , 1px);
   }
   
   @keyframes fly-1 {
@@ -560,4 +560,15 @@
     cursor: pointer;
     border: 1px #3e3e3e solid;
     font-family: "inter" , sans-serif;
+    text-shadow: #ffffff8e 1px 0 30px;
+    transition: all ease .30s;
+}
+
+.JoinTeamButton:hover {
+    background: rgba(176, 176, 176, 0.138);
+    color: #d5d5d5;
+}
+
+.JoinTeamButton:active {
+    transform:translate(1px , 1px);
 }
