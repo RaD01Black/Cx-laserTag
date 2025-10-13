@@ -405,3 +405,10 @@
     flex-direction: row;
     gap: 20px;
   }
+
+  .BetMoneyLobbyText {
+    transform: translateY(-3.4rem);
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    color: #8d8d8d;
+  }
