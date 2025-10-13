@@ -24,6 +24,7 @@
 .InsideDetailsRoomLobby {
     display: flex;
     flex-direction: row;
+    gap: 15px;
 }
 
 .BottomOfmapRoomDetail {
@@ -426,12 +427,26 @@
     width: 74rem;
   }
 
-  .TeamDiv {
-    background: url(../imgs/RedPlayerBgRoom.png) #17171726;
+  .BlueTeamDiv {
+    background: url(../imgs/BoxPlayerBgRoom.png) ;
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 54rem;
-    height:17.7rem;
+    background-size: cover;
+    width: 973px;
+    height:324px;
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+  }
+
+  .RedTeamDiv {
+    background: url(../imgs/RedPlayerBgRoom.png) #a0080826;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 973px;
+    height:324px;
     z-index: 2;
     overflow: hidden;
     position: relative;
@@ -443,8 +458,8 @@
 .BlueShadowForTeam {
     width: 2px;
     height: 60%;
-    -webkit-box-shadow: 12px 0px 68px 13px rgba(236,45,48,0.49); 
-    box-shadow: 12px 0px 78px 13px rgba(45, 70, 236, 0.49);
+    -webkit-box-shadow: 12px 0px 78px 13px rgba(236,45,48,0.49); 
+    box-shadow: 12px 0px 78px 13px #0088ff7d;
     position: absolute;
     left: 0rem;
     z-index: 99;
