@@ -432,45 +432,78 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 973px;
-    height:324px;
+    height:325px;
     z-index: 2;
-    overflow: hidden;
     position: relative;
     backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
+    overflow: hidden;
+    border-radius: 4px;
   }
 
   .RedTeamDiv {
-    background: url(../imgs/RedPlayerBgRoom.png) #a0080826;
+    background: url(../imgs/BoxPlayerBgRoom.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     width: 973px;
-    height:324px;
+    height:325px;
     z-index: 2;
-    overflow: hidden;
     position: relative;
     backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
+    overflow: hidden;
+    border-radius: 4px;
+
   }
+
+.BlueShadowTopBox {
+    width: 120px;
+    height: 120px;
+    background: #00FF08;
+    transform: translateX(9rem) translateY(-7.7rem);
+    -webkit-box-shadow: -20px 20px 190px 41px rgba(0, 136, 255, 0.342); 
+    box-shadow: -20px 20px 190px 41px rgba(0, 136, 255, 0.342);
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 99;
+}
 
 .BlueShadowForTeam {
     width: 2px;
     height: 60%;
-    -webkit-box-shadow: 12px 0px 78px 13px rgba(236,45,48,0.49); 
-    box-shadow: 12px 0px 78px 13px #0088ff7d;
+    -webkit-box-shadow: 12px 0px 78px 13px rgba(0, 136, 255, 0.342); 
+    box-shadow: 12px 0px 88px 10px rgba(0, 136, 255, 0.342);
     position: absolute;
     left: 0rem;
     z-index: 99;
+    background: transparent;
+    transform: translateX(-4px);
 }
 
-  .RedShadowForTeam {
+.RedShadowForTeam {
     width: 2px;
     height: 60%;
-    -webkit-box-shadow: 12px 0px 68px 13px rgba(236,45,48,0.49); 
-    box-shadow: 12px 0px 78px 13px rgba(236,45,48,0.49);
+    -webkit-box-shadow: 12px 0px 78px 13px rgba(255, 0, 0, 0.342); 
+    box-shadow: 12px 0px 88px 10px rgba(255, 0, 0, 0.342);
     position: absolute;
     left: 0rem;
     z-index: 99;
-  }
+    background: transparent;
+    transform: translateX(-4px);
+}
+
+.RedShadowTopBox {
+    width: 120px;
+    height: 120px;
+    background: #00FF08;
+    transform: translateX(9rem) translateY(-7.7rem);
+    -webkit-box-shadow: -20px 20px 190px 41px rgba(255, 0, 0, 0.342); 
+    box-shadow: -20px 20px 190px 41px rgba(255, 0, 0, 0.342);
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 99;
+}
