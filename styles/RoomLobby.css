@@ -637,3 +637,22 @@
     font-family: "Afacad", sans-serif;
     font-weight: 100;
 }
+
+.UserNameSteamDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Afacad", sans-serif;
+    font-weight: 900;
+    position: absolute;
+    bottom: 3.3rem;
+    gap: 5px;
+    font-size: 19px;
+}
+
+.UserNameSteamDiv img {
+    width: 18px;
+    filter: drop-shadow(0 0 0.75rem rgb(221, 195, 0));
+}
