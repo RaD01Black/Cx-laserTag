@@ -420,6 +420,8 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    justify-content: center;
+    align-items: center;
   }
 
   .RedSvgBehindImg {
@@ -507,4 +509,14 @@
     top: 0rem;
     right: 0rem;
     z-index: 99;
+}
+
+.VsImage {
+    width: 5rem;
+    position: absolute;
+    z-index: 99;
+}
+
+.TopTeamsDiv {
+    
 }
