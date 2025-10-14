@@ -24,7 +24,6 @@ function replayLobbyAnimation() {
   });
 }
 
-// 🔹 LeaderBoard Page Animation
 function replayLeaderBoardAnimation() {
   const boardRoot =
     document.getElementById("LeaderBoardPage") ||
@@ -48,7 +47,6 @@ function replayLeaderBoardAnimation() {
   });
 }
 
-// 🔹 Lobbys Page Animation
 function replayLobbysAnimation() {
   const lobbyListRoot =
     document.getElementById("LobbysPage") ||
@@ -72,7 +70,6 @@ function replayLobbysAnimation() {
   });
 }
 
-// 🔹 Room Page Animation (for .animatonload)
 function replayRoomPageAnimation() {
   const roomRoot =
     document.getElementById("RoomPage") ||
@@ -96,7 +93,6 @@ function replayRoomPageAnimation() {
   });
 }
 
-// 🔹 MAIN PAGE HANDLER
 function pageHandler(page) {
   const pages = ["homepage", "SettingLobby", "LeaderBoardPage", "LobbysPage", "RoomPage"];
 
@@ -107,7 +103,6 @@ function pageHandler(page) {
     if (p === page) {
       el.style.display = "flex";
 
-      // Run correct animation for the opened page
       if (p === "SettingLobby") {
         replayLobbyAnimation();
       } else if (p === "LeaderBoardPage") {
@@ -124,16 +119,13 @@ function pageHandler(page) {
   });
 }
 
-// ✅ Auto-run animations when page loads or refreshes
 document.addEventListener("DOMContentLoaded", () => {
-  // If SettingLobby is already open on refresh
   const settingLobby =
     document.getElementById("SettingLobby") || document.querySelector(".SettingLobby");
   if (settingLobby && getComputedStyle(settingLobby).display !== "none") {
     replayLobbyAnimation();
   }
 
-  // If RoomPage is already open on refresh
   const roomPage =
     document.getElementById("RoomPage") || document.querySelector(".RoomPage");
   if (roomPage && getComputedStyle(roomPage).display !== "none") {
