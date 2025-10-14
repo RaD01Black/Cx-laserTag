@@ -1,13 +1,13 @@
 function replayLobbyAnimation() {
   const lobbyRoot =
-    document.getElementById('SettingLobby') ||
-    document.querySelector('.SettingLobby') ||
+    document.getElementById("SettingLobby") ||
+    document.querySelector(".SettingLobby") ||
     document;
 
   const scope =
-    lobbyRoot.querySelector('.LeftPartSettingMenu') || lobbyRoot;
+    lobbyRoot.querySelector(".LeftPartSettingMenu") || lobbyRoot;
 
-  const targets = scope.querySelectorAll('.input-container, .FriendlyFireDiv');
+  const targets = scope.querySelectorAll(".input-container, .FriendlyFireDiv");
   if (!targets.length) return;
 
   gsap.killTweensOf(targets);
@@ -18,19 +18,20 @@ function replayLobbyAnimation() {
       opacity: 1,
       duration: 0.8,
       stagger: 0.1,
-      ease: 'power1.out',
-      overwrite: 'auto'
+      ease: "power1.out",
+      overwrite: "auto"
     });
   });
 }
 
+// 🔹 LeaderBoard Page Animation
 function replayLeaderBoardAnimation() {
   const boardRoot =
-    document.getElementById('LeaderBoardPage') ||
-    document.querySelector('.LeaderBoardPage') ||
+    document.getElementById("LeaderBoardPage") ||
+    document.querySelector(".LeaderBoardPage") ||
     document;
 
-  const targets = boardRoot.querySelectorAll('.PlayerBoxLeaderBoard');
+  const targets = boardRoot.querySelectorAll(".PlayerBoxLeaderBoard");
   if (!targets.length) return;
 
   gsap.killTweensOf(targets);
@@ -41,19 +42,20 @@ function replayLeaderBoardAnimation() {
       opacity: 1,
       duration: 0.8,
       stagger: 0.15,
-      ease: 'power1.out',
-      overwrite: 'auto'
+      ease: "power1.out",
+      overwrite: "auto"
     });
   });
 }
 
+// 🔹 Lobbys Page Animation
 function replayLobbysAnimation() {
   const lobbyListRoot =
-    document.getElementById('LobbysPage') ||
-    document.querySelector('.LobbysPage') ||
+    document.getElementById("LobbysPage") ||
+    document.querySelector(".LobbysPage") ||
     document;
 
-  const targets = lobbyListRoot.querySelectorAll('.RoomBoxDiv');
+  const targets = lobbyListRoot.querySelectorAll(".RoomBoxDiv");
   if (!targets.length) return;
 
   gsap.killTweensOf(targets);
@@ -64,41 +66,78 @@ function replayLobbysAnimation() {
       opacity: 1,
       duration: 0.8,
       stagger: 0.15,
-      ease: 'power1.out',
-      overwrite: 'auto'
+      ease: "power1.out",
+      overwrite: "auto"
     });
   });
 }
 
+// 🔹 Room Page Animation (for .animatonload)
+function replayRoomPageAnimation() {
+  const roomRoot =
+    document.getElementById("RoomPage") ||
+    document.querySelector(".RoomPage") ||
+    document;
+
+  const targets = roomRoot.querySelectorAll(".animatonload");
+  if (!targets.length) return;
+
+  gsap.killTweensOf(targets);
+  gsap.set(targets, { opacity: 0 });
+
+  requestAnimationFrame(() => {
+    gsap.to(targets, {
+      opacity: 1,
+      duration: 1,
+      stagger: 0.15,
+      ease: "power1.out",
+      overwrite: "auto"
+    });
+  });
+}
+
+// 🔹 MAIN PAGE HANDLER
 function pageHandler(page) {
-  const pages = ['homepage', 'SettingLobby', 'LeaderBoardPage', 'LobbysPage', 'RoomPage'];
+  const pages = ["homepage", "SettingLobby", "LeaderBoardPage", "LobbysPage", "RoomPage"];
 
   pages.forEach(p => {
-    const el = document.getElementById(p) || document.querySelector('.' + p);
+    const el = document.getElementById(p) || document.querySelector("." + p);
     if (!el) return;
 
     if (p === page) {
-      el.style.display = 'flex';
+      el.style.display = "flex";
 
-      if (p === 'SettingLobby') {
+      // Run correct animation for the opened page
+      if (p === "SettingLobby") {
         replayLobbyAnimation();
-      } else if (p === 'LeaderBoardPage') {
+      } else if (p === "LeaderBoardPage") {
         replayLeaderBoardAnimation();
-      } else if (p === 'LobbysPage') {
+      } else if (p === "LobbysPage") {
         replayLobbysAnimation();
+      } else if (p === "RoomPage") {
+        replayRoomPageAnimation();
       }
 
     } else {
-      el.style.display = 'none';
+      el.style.display = "none";
     }
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const isOpen =
-    (document.getElementById('SettingLobby') || document.querySelector('.SettingLobby'));
-  if (isOpen && getComputedStyle(isOpen).display !== 'none') {
+// ✅ Auto-run animations when page loads or refreshes
+document.addEventListener("DOMContentLoaded", () => {
+  // If SettingLobby is already open on refresh
+  const settingLobby =
+    document.getElementById("SettingLobby") || document.querySelector(".SettingLobby");
+  if (settingLobby && getComputedStyle(settingLobby).display !== "none") {
     replayLobbyAnimation();
+  }
+
+  // If RoomPage is already open on refresh
+  const roomPage =
+    document.getElementById("RoomPage") || document.querySelector(".RoomPage");
+  if (roomPage && getComputedStyle(roomPage).display !== "none") {
+    replayRoomPageAnimation();
   }
 });
 
