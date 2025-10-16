@@ -107,7 +107,6 @@
   overflow-x: hidden;
   width: 28rem;
   z-index: 99 !important;
-
 }
 
 
@@ -135,6 +134,33 @@
 }
 
 .MapSelectDiv:active {
+  transform: scale(1.05);
+}
+
+.MapSelectDiv2 {
+  position: relative;  
+  width: 27rem;
+  min-height: 6.7rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.5s ease; 
+  z-index: 99 !important;
+}
+
+.MapSelectDiv2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.MapSelectDiv2:active {
   transform: scale(1.05);
 }
 
