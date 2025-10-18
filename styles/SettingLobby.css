@@ -160,7 +160,13 @@
   object-fit: cover;
 }
 
-
+.LockIconForMap {
+  z-index: 6;
+  width: 30px !important;
+  height: 30px !important;
+  position: absolute;
+  right: 3rem; 
+}
 
 .LockDivBg {
   background: #0e0e0e8a;
