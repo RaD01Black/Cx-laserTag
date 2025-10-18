@@ -160,12 +160,19 @@
   object-fit: cover;
 }
 
+.ImageLockDiv {
+  background-color: #00C2CB;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+}
+
 .LockIconForMap {
   z-index: 6;
-  width: 30px !important;
+  width: 30px  !important;
   height: 30px !important;
-  position: absolute;
-  right: 3rem; 
+  margin-left:22rem;
+  margin-top: 2.5rem;
 }
 
 .LockDivBg {
