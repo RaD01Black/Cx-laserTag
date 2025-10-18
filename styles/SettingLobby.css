@@ -164,6 +164,42 @@
   transform: scale(1.05);
 }
 
+.LockDivBg {
+  background: #585858;
+  width: 100%;
+  min-height: 6.7rem;
+}
+
+.MapImageLock {
+  z-index: 0;  
+  border-radius: 8px;
+}
+
+.UpperMapImageLock {
+  z-index: 1; 
+}
+
+.MapDetailLock {
+  position: absolute;
+  left: 2rem;
+  z-index: 2;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.MapDetailLock h1 {
+  font-size: 20px;
+}
+
+.MapDetailLock p {
+  font-size: 11px;
+  font-weight: 300;
+}
+
 .MapImage {
   z-index: 0;  
   border-radius: 8px;
@@ -193,6 +229,7 @@
   font-size: 11px;
   font-weight: 300;
 }
+
 
 .GreenSelectMap,
 .RedSelectMap {
