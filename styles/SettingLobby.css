@@ -213,6 +213,10 @@
   font-weight: 300;
 }
 
+.MapDetailLock p span {
+  font-weight: 600;
+}
+
 .GrayselectMap {
   pointer-events: none;  
   transition: opacity 0.5s ease, transform 0.4s ease;
