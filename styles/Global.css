@@ -155,8 +155,8 @@
 
   .CustomNotification {
     display: flex ;
-    width: fit-content;
-    padding: 0 55px;
+    min-width: 22rem;
+    padding: 0 45px;
     height:3.2rem;
     background: url(../imgs/NotifBg.png) ;
     background-repeat: no-repeat;
