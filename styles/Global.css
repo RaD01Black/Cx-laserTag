@@ -154,11 +154,11 @@
   }
 
   .CustomNotification {
-    display: none ;
+    display: flex ;
     width: fit-content;
-    padding: 0 30px;
+    padding: 0 55px;
     height:3.2rem;
-    background: url(../imgs/n.png) ;
+    background: url(../imgs/NotifBg.png) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -171,4 +171,5 @@
     filter: drop-shadow(0 0 0.75rem black);
     position: absolute;
     top: 2rem;
+    z-index: 99 !important;
    }
