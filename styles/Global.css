@@ -154,7 +154,7 @@
   }
 
   .CustomNotification {
-    display: flex ;
+    display: none;
     min-width: 22rem;
     padding: 0 45px;
     height:3.2rem;
