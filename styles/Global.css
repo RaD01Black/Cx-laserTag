@@ -23,6 +23,10 @@
     overflow: hidden;
   }
 
+  :root {
+    --main-color: #FF1A1A;
+  }
+
   @font-face {
     font-family: 'RangerRegular';
     src: url('../fonts/spaceranger.ttf') format('truetype');
@@ -173,3 +177,22 @@
     top: 2rem;
     z-index: 99 !important;
    }
+
+   .DeadLog {
+    flex-direction:column;
+    width:fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 1rem;
+    display: none;
+    justify-content: right;
+    align-items: right;
+    gap: 2px;
+    text-shadow: #fff 1px 0 5px;
+    font-family: "TargetRegular", sans-serif;
+  }
+  
+  .DeadLog p span {
+    color: var(--main-color);
+    text-shadow: var(--main-color) 1px 0 5px;
+  }
