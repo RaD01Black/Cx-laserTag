@@ -184,12 +184,12 @@
     height: fit-content;
     position: absolute;
     right: 1rem;
-    display: none;
+    display: flex;
     justify-content: right;
     align-items: right;
     gap: 2px;
     text-shadow: #fff 1px 0 5px;
-    font-family: "TargetRegular", sans-serif;
+    font-family: "RangerRegular", sans-serif;
   }
   
   .DeadLog p span {
