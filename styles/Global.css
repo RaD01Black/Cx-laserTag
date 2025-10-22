@@ -191,8 +191,16 @@
     text-shadow: #fff 1px 0 5px;
     font-family: "RangerRegular", sans-serif;
   }
+
+  .DeadLog p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   
-  .DeadLog p span {
-    color: var(--main-color);
+  .DeadLog span img {
+    width: 30px;
     text-shadow: var(--main-color) 1px 0 5px;
   }
