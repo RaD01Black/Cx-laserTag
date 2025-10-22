@@ -209,6 +209,7 @@
     padding-top: 3px;
     padding-bottom: 5px;
     border-radius: 5px;
+    overflow: hidden;
   }
 
   .DeadLogPlayer p {
@@ -234,6 +235,6 @@
     position: absolute;
     right: 0px;
     border-radius: 5px;
-    -webkit-box-shadow: -7px 0px 43px 12px #FF0000; 
-    box-shadow: -7px 0px 43px 12px #FF0000;
+    -webkit-box-shadow: 10px 0px 43px 8px #FF0000; 
+    box-shadow: 10px 0px 43px 8px #FF0000;
   }
