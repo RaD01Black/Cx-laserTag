@@ -205,9 +205,11 @@
     text-align: center;
     gap: 15px;
   }
+
+
   
   .DeadLog span img {
     width: 30px;
     transform: translateY(4px);
-    text-shadow: var(--main-color) 1px 0 5px;
+    filter: drop-shadow(0 0 0.75rem rgb(73, 73, 73));
   }
