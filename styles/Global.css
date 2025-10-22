@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
 
+    :root {
+      --main-color: #FF1A1A;
+      --DeadLog-TextSize: 20px;
+    }
+
   * {
     margin: 0;
     padding: 0;
@@ -23,9 +28,7 @@
     overflow: hidden;
   }
 
-  :root {
-    --main-color: #FF1A1A;
-  }
+
 
   @font-face {
     font-family: 'RangerRegular';
@@ -188,19 +191,23 @@
     justify-content: right;
     align-items: right;
     gap: 2px;
-    text-shadow: #fff 1px 0 5px;
+    text-shadow: #fff 1px 0 20px;
     font-family: "RangerRegular", sans-serif;
+    font-size: var(--DeadLog-TextSize);
   }
 
   .DeadLog p {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
+
     align-items: center;
     text-align: center;
+    gap: 15px;
   }
   
   .DeadLog span img {
     width: 30px;
+    transform: translateY(4px);
     text-shadow: var(--main-color) 1px 0 5px;
   }
