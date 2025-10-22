@@ -208,6 +208,7 @@
     padding-right: 20px;
     padding-top: 3px;
     padding-bottom: 5px;
+    padding-left: 20px;
     border-radius: 5px;
     overflow: hidden;
   }
@@ -222,8 +223,8 @@
   }
   
   .DeadLogPlayer p img {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     filter: drop-shadow(0 0 0.75rem rgb(73, 73, 73));
   }
