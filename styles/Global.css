@@ -234,5 +234,6 @@
     position: absolute;
     right: 0px;
     border-radius: 5px;
-
+    -webkit-box-shadow: -7px 0px 43px 12px #FF0000; 
+    box-shadow: -7px 0px 43px 12px #FF0000;
   }
