@@ -1,5 +1,5 @@
 .SettingLobby {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
