@@ -241,7 +241,7 @@
   .TopTeamPlayerUi {
     background-color: #5a5a5a;
     width: 60rem;
-    height: 7rem;
+    height: 9rem;
     position: absolute;
     top: 0;
     display: flex;
@@ -261,6 +261,23 @@
     font-family: "Oxanium", sans-serif;
     color: #c9c3d9;
     font-size: 17px;
+  }
+
+  .RoundTeamsUi {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: "Oxanium", sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .AfacadFont {
+    font-family: "Afacad", sans-serif !important;
+    font-size: 26px;
+    transform: translateY(-2px);
   }
 
   .RedEndScreen {
