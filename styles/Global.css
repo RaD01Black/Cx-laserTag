@@ -299,6 +299,14 @@
   clip-path: polygon(35% 0, 100% 0, 65% 100%, 0 100%);
 }
 
+.BlueTeamTopUi {
+  position: absolute;
+  width: 25rem;
+  height: 6rem;
+  background-color: #dc0000;
+  transform: translateX(-16rem);
+}
+
 
   .RedEndScreen {
     display: flex;
