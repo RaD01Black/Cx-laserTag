@@ -302,7 +302,7 @@
   position: absolute;
   width: 25rem;
   height: 6rem;
-  transform: translateX(-17.5rem);
+  transform: translateX(-18rem);
   display: flex;
   flex-direction: row;
   gap: 65px;
@@ -320,7 +320,7 @@
   height:50px;
   overflow: hidden;
   transform: rotate(45deg);
-
+  filter: drop-shadow(0 0 0.75rem #006eff89);
 }
 
 .diamond-wrapperTopUi img {
