@@ -247,6 +247,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #5a5a5a;
   }
 
   .CenterDetailTexts {
@@ -302,11 +303,17 @@
   position: absolute;
   width: 25rem;
   height: 6rem;
-  transform: translateX(-18rem);
+  transform: translateX(-18.4rem);
   display: flex;
   flex-direction: row;
   gap: 65px;
   justify-content: end;
+}
+
+.BlueLineBehindSteamBg {
+  position: absolute;
+  width:95px;
+  height:95px;
 }
 
 .center-containerTopUi {
@@ -316,8 +323,8 @@
 }
 
 .diamond-wrapperTopUi {
-  width:50px;
-  height:50px;
+  width:55px;
+  height:55px;
   overflow: hidden;
   transform: rotate(45deg);
   filter: drop-shadow(0 0 0.75rem #006eff89);
@@ -337,11 +344,7 @@
   align-items: center;
 }
 
-.BlueLineBehindSteamBg {
-  position: absolute;
-  width:90px;
-  height:90px;
-}
+
 
 
 
@@ -352,22 +355,22 @@
   position: absolute;
   width: 25rem;
   height: 6rem;
-  transform: translateX(25rem);
+  transform: translateX(18.6rem);
   display: flex;
   flex-direction: row;
   gap: 65px;
-  justify-content: end;
+  justify-content: start;
 }
 
 .RedLineBehindSteamBg {
   position: absolute;
-  width:90px;
-  height:90px;
+  width:95px;
+  height:95px;
 }
 
 .Reddiamond-wrapperTopUi {
-  width:50px;
-  height:50px;
+  width:55px;
+  height:55px;
   overflow: hidden;
   transform: rotate(45deg);
   filter: drop-shadow(0 0 0.75rem #ff1a1a8d);
