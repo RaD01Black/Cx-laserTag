@@ -5,9 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 
 
-    :root {
+  :root {
       --main-color: #FF1A1A;
-    }
+  }
 
   * {
     margin: 0;
@@ -29,15 +29,12 @@
     overflow: hidden;
   }
 
-
-
   @font-face {
     font-family: 'RangerRegular';
     src: url('../fonts/spaceranger.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
-
 
   .button {
     display: block;
@@ -247,6 +244,23 @@
     height: 7rem;
     position: absolute;
     top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CenterDetailTexts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .TimerUi {
+    font-family: "Oxanium", sans-serif;
+    color: #c9c3d9;
+    font-size: 17px;
   }
 
   .RedEndScreen {
