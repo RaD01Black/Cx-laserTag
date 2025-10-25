@@ -239,15 +239,15 @@
   }
 
   .TopTeamPlayerUi {
-    background-color: #5a5a5a;
     width: 60rem;
-    height: 9rem;
+    height: 10rem;
     position: absolute;
     top: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #5a5a5a;
   }
 
   .CenterDetailTexts {
@@ -255,12 +255,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 4px;
   }
 
   .TimerUi {
     font-family: "Oxanium", sans-serif;
     color: #c9c3d9;
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .RoundTeamsUi {
@@ -268,7 +269,7 @@
     flex-direction: row;
     gap: 10px;
     font-family: "Oxanium", sans-serif;
-    font-size: 40px;
+    font-size: 45px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -279,6 +280,25 @@
     font-size: 26px;
     transform: translateY(-2px);
   }
+
+.RoundsShapeUi {
+  display: flex;
+}
+
+.WhiteRoundShape {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  clip-path: polygon(35% 0, 100% 0, 65% 100%, 0 100%);
+}
+
+.GrayRoundShape {
+  width: 17px;
+  height: 17px;
+  background: #ffffff5d;
+  clip-path: polygon(35% 0, 100% 0, 65% 100%, 0 100%);
+}
+
 
   .RedEndScreen {
     display: flex;
