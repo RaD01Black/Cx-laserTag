@@ -239,7 +239,7 @@
   }
 
   .TopTeamPlayerUi {
-    width: 60rem;
+    width: 80rem;
     height: 10rem;
     position: absolute;
     top: 0;
@@ -247,7 +247,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #5a5a5a;
   }
 
   .CenterDetailTexts {
@@ -303,7 +302,6 @@
   position: absolute;
   width: 25rem;
   height: 6rem;
-  background-color: #dc0000;
   transform: translateX(-17.5rem);
   display: flex;
   flex-direction: row;
@@ -318,8 +316,8 @@
 }
 
 .diamond-wrapperTopUi {
-  width:70px;
-  height:70px;
+  width:50px;
+  height:50px;
   overflow: hidden;
   transform: rotate(45deg);
 
@@ -341,8 +339,8 @@
 
 .BlueLineBehindSteamBg {
   position: absolute;
-  width:120px;
-  height:120px;
+  width:90px;
+  height:90px;
 }
 
 
