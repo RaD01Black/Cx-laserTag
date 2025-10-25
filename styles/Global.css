@@ -239,6 +239,14 @@
     box-shadow: 10px 0px 43px 8px #FF0000;
   }
 
+  .TopTeamPlayerUi {
+    background-color: #5a5a5a;
+    width: 60rem;
+    height: 7rem;
+    position: absolute;
+    top: 0;
+  }
+
   .RedEndScreen {
     display: flex;
     justify-content: center;
