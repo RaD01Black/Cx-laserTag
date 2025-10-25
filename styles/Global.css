@@ -311,7 +311,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-2.5rem);
 }
 
 .diamond-wrapperTopUi {
