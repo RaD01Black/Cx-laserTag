@@ -307,14 +307,14 @@
   transform: translateX(-16rem);
 }
 
-.center-containerRoomPlayer {
+.center-containerTopUi {
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateY(-2.5rem);
 }
 
-.diamond-wrapperRoomPlayer {
+.diamond-wrapperTopUi {
   width:70px;
   height:70px;
   overflow: hidden;
@@ -322,7 +322,7 @@
 
 }
 
-.diamond-wrapperRoomPlayer img {
+.diamond-wrapperTopUi img {
   max-width: 100%;
   transform: rotate(-45deg) scale(1.42);
   width: 100%;
