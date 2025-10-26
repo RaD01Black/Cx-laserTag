@@ -327,7 +327,7 @@
   height:55px;
   overflow: hidden;
   transform: rotate(45deg);
-  filter: drop-shadow(0 0 0.75rem #006eff89);
+  filter: drop-shadow(0 0 0.75rem #096def89);
 }
 
 .diamond-wrapperTopUi img {
