@@ -262,7 +262,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: url(../imgs/TopUiBg.png);
+    background: url(../imgs/TopUiBgDeathMatch.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -288,6 +288,17 @@
     gap: 10px;
     font-family: "Oxanium", sans-serif;
     font-size: 45px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .RoundTeamsUiDeathmatch {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: "Oxanium", sans-serif;
+    font-size: 25px;
     justify-content: center;
     align-items: center;
     text-align: center;

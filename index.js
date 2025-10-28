@@ -490,3 +490,10 @@ boxes.forEach(box => {
     hover.style.transform = 'translateY(12rem)';
   });
 });
+
+document.querySelectorAll('.TopKill').forEach(el => {
+  const text = el.textContent.trim();
+  if (text.length > 10) {
+    el.textContent = text.substring(0, 10) + '..';
+  }
+});
