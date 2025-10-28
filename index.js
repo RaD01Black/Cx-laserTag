@@ -493,7 +493,7 @@ boxes.forEach(box => {
 
 document.querySelectorAll('.TopKill').forEach(el => {
   const text = el.textContent.trim();
-  if (text.length > 10) {
-    el.textContent = text.substring(0, 10) + '..';
+  if (text.length >10) {
+    el.textContent = text.substring(0,10) + '..';
   }
 });

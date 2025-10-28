@@ -298,10 +298,16 @@
     flex-direction: row;
     gap: 10px;
     font-family: "Oxanium", sans-serif;
-    font-size: 25px;
+    font-size: 22px;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .TopKillNumber {
+    font-family: "Oxanium", sans-serif;
+    font-weight: 700;
+    font-size: 27px !important;
   }
 
   .AfacadFont {
