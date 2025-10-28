@@ -373,6 +373,14 @@
   object-fit: cover;
 }
 
+.DeathMatchPlayerKillAmount {
+  position: absolute;
+  font-family: "RangerRegular", sans-serif;
+  bottom: 0;
+  transform: translateY(1.4rem);
+  color: #ffffffea;
+}
+
 .diamond-wrapperTopUi {
   width:55px;
   height:55px;
