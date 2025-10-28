@@ -334,6 +334,17 @@
   clip-path: polygon(35% 0, 100% 0, 65% 100%, 0 100%);
 }
 
+.LefttDeathMatchTeamTopUi {
+  position: absolute;
+  width: 25rem;
+  height: 6rem;
+  transform: translateX(-19rem);
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+  justify-content: end;
+}
+
 .BlueTeamTopUi {
   position: absolute;
   width: 25rem;
@@ -408,6 +419,17 @@
   position: absolute;
   width:95px;
   height:95px;
+}
+
+.RightDeathMatchTeamTopUi {
+  position: absolute;
+  width: 25rem;
+  height: 6rem;
+  transform: translateX(19.2rem);
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+  justify-content: start;
 }
 
 
