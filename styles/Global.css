@@ -533,13 +533,26 @@
     overflow: hidden;
   }
 
+  .TextOfDeathUi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .FistPDeathUi {
-    -webkit-text-stroke: 1px #444444;
+    -webkit-text-stroke: 1px #ffffff51;
     font-family: "RangerRegular", sans-serif;
     color: transparent;
     font-size: 60px;
-    
+    position: absolute;
+  }
 
+  .SecondPDeathUi {
+    font-size: 50px;
+    position: absolute;
+    font-family: "RangerRegular", sans-serif;
+    transform: translateY(13px);
   }
 
   
