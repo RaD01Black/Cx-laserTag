@@ -553,6 +553,6 @@
     position: absolute;
     font-family: "RangerRegular", sans-serif;
     transform: translateY(13px);
+    filter: drop-shadow(0 0 33px #FF1A1A);
   }
 
-  
