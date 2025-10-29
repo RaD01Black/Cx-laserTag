@@ -243,7 +243,7 @@
     height: 10rem;
     position: absolute;
     top: 0;
-    display: none;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -258,7 +258,7 @@
     height: 10rem;
     position: absolute;
     top: 0;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -411,6 +411,19 @@
   overflow: hidden;
   transform: rotate(45deg);
   filter: drop-shadow(0 0 0.75rem #096def89);
+  animation: pulseShadowBlueTeam 2s infinite ease-in-out;
+}
+
+@keyframes pulseShadowBlueTeam {
+  0% {
+    filter: drop-shadow(0 0 0.5rem #096def40);
+  }
+  50% {
+    filter: drop-shadow(0 0 1.5rem #096defcc);
+  }
+  100% {
+    filter: drop-shadow(0 0 0.5rem #096def40);
+  }
 }
 
 .diamond-wrapperTopUi img {
