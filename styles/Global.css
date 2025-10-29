@@ -482,6 +482,19 @@
   overflow: hidden;
   transform: rotate(45deg);
   filter: drop-shadow(0 0 0.75rem #ff1a1a8d);
+  animation: pulseShadowRedTeam 2s infinite ease-in-out;
+}
+
+@keyframes pulseShadowRedTeam {
+  0% {
+    filter: drop-shadow(0 0 0.5rem #ff1a1a40);
+  }
+  50% {
+    filter: drop-shadow(0 0 1.5rem #ff1a1acc);
+  }
+  100% {
+    filter: drop-shadow(0 0 0.5rem #ff1a1a40);
+  }
 }
 
 .Reddiamond-wrapperTopUi img {
