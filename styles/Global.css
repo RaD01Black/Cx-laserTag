@@ -518,6 +518,7 @@
 
   .RedEndScreen {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
@@ -531,3 +532,14 @@
     color: #fff;
     overflow: hidden;
   }
+
+  .FistPDeathUi {
+    -webkit-text-stroke: 1px #444444;
+    font-family: "RangerRegular", sans-serif;
+    color: transparent;
+    font-size: 60px;
+    
+
+  }
+
+  
