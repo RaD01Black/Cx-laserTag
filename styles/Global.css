@@ -517,7 +517,7 @@
 }
 
   .RedEndScreen {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -559,7 +559,7 @@
 
 .loader {
   position: absolute;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 100vh;
