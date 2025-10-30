@@ -626,13 +626,25 @@
     text-align: center;
     font-family: "Afacad", sans-serif;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 17px;
 
   }
 
-  .DetailPlayerTopKilerUi img {
-    width: 30px;
+  .CrownAndSteamTopKiller {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .CrownAndSteamTopKiller svg {
+    transform: translateY(-14px) translateX(-8px) rotate(-10deg);
+  }
+
+  .CrownAndSteamTopKiller img {
+    width: 25px;
     border-radius: 100%;
+    position: absolute;
+
   }
 
 .loader {
