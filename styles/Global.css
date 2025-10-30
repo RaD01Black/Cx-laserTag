@@ -592,6 +592,19 @@
     height: 3.5rem;
     border: 1px #ffffff2d solid;
     border-radius: 8px;
+    background: #ff0000;
+    background: linear-gradient(164deg, rgba(255, 0, 0, 0) 40%, rgba(235, 0, 0, 0.2) 100%);
+    overflow: hidden;
+  }
+
+  .RedTopKillerLine {
+    height: 3.4rem;
+    width: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #f0224c;
+    -webkit-box-shadow: 18px 0px 35px 5px #FF0000; 
+    box-shadow: 18px 0px 35px 5px #ff0000de;
   }
 
 .loader {
