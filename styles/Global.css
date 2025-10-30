@@ -595,6 +595,13 @@
     background: #ff0000;
     background: linear-gradient(164deg, rgba(255, 0, 0, 0) 40%, rgba(235, 0, 0, 0.2) 100%);
     overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 25px;
   }
 
   .RedTopKillerLine {
@@ -603,8 +610,29 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background: #f0224c;
-    -webkit-box-shadow: 18px 0px 55px 5px #FF0000; 
-    box-shadow: 18px 0px 55px 5px #ff0000de;
+    -webkit-box-shadow: 18px 0px 60px 5px #FF0000; 
+    box-shadow: 18px 0px 60px 5px #ff0000de;
+    position: absolute;
+    left: 0rem;
+  }
+
+  .DetailPlayerTopKilerUi {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-family: "Afacad", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+
+  }
+
+  .DetailPlayerTopKilerUi img {
+    width: 30px;
+    border-radius: 100%;
   }
 
 .loader {
