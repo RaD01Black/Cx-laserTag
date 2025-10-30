@@ -556,6 +556,13 @@
     filter: drop-shadow(0 0 33px #FF1A1A);
   }
 
+  .KillDeathButton {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
 
 .loader {
   position: absolute;
