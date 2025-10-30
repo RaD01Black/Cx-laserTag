@@ -562,6 +562,12 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
+    transform: translateY(3rem);
+  }
+
+  .RedKillDeathDiv {
+    display: flex;
+    gap: 15px;
   }
 
 .loader {
