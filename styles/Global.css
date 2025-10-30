@@ -581,6 +581,12 @@
     align-items: center;
   }
 
+  .BoxDeathKillAllDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
 .loader {
   position: absolute;
   display: none;
