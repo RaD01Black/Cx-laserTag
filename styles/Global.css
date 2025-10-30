@@ -556,13 +556,19 @@
     filter: drop-shadow(0 0 33px #FF1A1A);
   }
 
+  .BoxDeathKillAllDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(3.5rem);
+  }
+
   .KillDeathButton {
     display: flex;
     flex-direction: row;
     gap: 10px;
     justify-content: center;
     align-items: center;
-    transform: translateY(3.5rem);
   }
 
   .RedKillDeathDiv {
@@ -581,10 +587,11 @@
     align-items: center;
   }
 
-  .BoxDeathKillAllDiv {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  .RedTeamTopKillerDiv {
+    width: calc(21rem + 10px);
+    height: 3.5rem;
+    border: 1px #ffffff2d solid;
+    border-radius: 8px;
   }
 
 .loader {
