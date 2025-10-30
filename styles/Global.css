@@ -517,7 +517,7 @@
 }
 
   .RedEndScreen {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -534,7 +534,7 @@
   }
 
   .GreenEndScreen {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
