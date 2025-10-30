@@ -559,7 +559,7 @@
   .KillDeathButton {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     transform: translateY(3.5rem);
@@ -567,13 +567,14 @@
 
   .RedKillDeathDiv {
     display: flex;
-    gap: 15px;
+    gap: 18px;
     font-family: "Afacad", sans-serif;
     font-size: 22px;
     font-weight: 800;
-    background-color: transparent;
+    background: #ff0000;
+    background: linear-gradient(164deg, rgba(255, 0, 0, 0) 20%, rgba(235, 0, 0, 0.2) 100%);
     border: 1px #ffffff2d solid;
-    width: 10rem;
+    width: 10.5rem;
     height: 3.5rem;
     justify-content: center;
     border-radius: 8px;
