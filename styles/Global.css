@@ -603,8 +603,8 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background: #f0224c;
-    -webkit-box-shadow: 18px 0px 35px 5px #FF0000; 
-    box-shadow: 18px 0px 35px 5px #ff0000de;
+    -webkit-box-shadow: 18px 0px 40px 5px #FF0000; 
+    box-shadow: 18px 0px 40px 5px #ff0000de;
   }
 
 .loader {
