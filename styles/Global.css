@@ -562,16 +562,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
   height: 100vh;
   width: 100vw;
-  background: #00000063;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
+  background: #0000009b;
   user-select: none;
-  color: #fff;
-  overflow: hidden;
+  backdrop-filter: blur(15px);
+  z-index: 99 !important;
 }
 @keyframes loader_5191 {
   from {
@@ -584,7 +580,7 @@
 }
 
 .square {
-  background: #ddd;
+  background: #ffffff;
   width: 10px;
   height: 10px;
   position: absolute;
