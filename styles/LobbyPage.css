@@ -305,7 +305,7 @@
   background: linear-gradient(
     270deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 0, 0, 0.812) 50%,
+    rgba(255, 0, 0, 0.893) 50%,
     rgba(255, 255, 255, 0) 100%
   );
   position: absolute;
@@ -320,7 +320,7 @@
   background: linear-gradient(
     270deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 0, 0, 0.812) 50%,
+    rgba(255, 0, 0, 0.893) 50%,
     rgba(255, 255, 255, 0) 100%
   );
   position: absolute;
@@ -432,10 +432,17 @@ backdrop-filter: blur(24.2px);
   position: absolute;
   bottom:1.2rem;
   gap: 10px;
-
 }
 
 .NormalButtonJoinPass {
+  display: flex;
+  background-color: #911e2000;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.NormalButtonJoinPassreuqest {
   display: flex;
   background-color: #911e2000;
   align-items: center;
@@ -451,7 +458,19 @@ backdrop-filter: blur(24.2px);
   right: 3rem;
 }
 
+.NormalButtonJoinPassreuqest:hover .LineTopJoinNormalReuquest {
+  left: 1.7rem;
+}
+
+.NormalButtonJoinPassreuqest:hover .LineBottomJoinNormalReuquest {
+  right: 1.7rem;
+}
+
 .NormalButtonJoinPass:active {
+  transform: scale(1.02);
+}
+
+.NormalButtonJoinPassreuqest:active {
   transform: scale(1.02);
 }
 
