@@ -1,5 +1,5 @@
 .LobbypageDiv {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
@@ -253,7 +253,7 @@
 }
 
 .InsideNormalButton {
-  width: 153px;
+  width: 173px;
   height: 43px;
   background: #00000083;
   border: 1px solid #474749de;
@@ -383,7 +383,7 @@ backdrop-filter: blur(24.2px);
 
 .NormalButtonJoinPass {
   display: flex;
-  width: 170px;
+  width: 390px;
   height: 55px;
   background-color: #911e2000;
   align-items: center;
@@ -391,6 +391,7 @@ backdrop-filter: blur(24.2px);
   cursor: pointer;
   position: absolute;
   bottom: .8rem;
+  gap: 10px;
 }
 
 .NormalButtonJoinPass:hover .LineTopJoinNormal {
