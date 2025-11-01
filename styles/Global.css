@@ -862,3 +862,20 @@
   margin-left: 15px;
   animation: loader_5191 675ms ease-in-out 600ms infinite;
 }
+
+
+
+.RequestNotifDiv {
+  flex-direction:column;
+  width:fit-content;
+  height: fit-content;
+  position: absolute;
+  right: 1rem;
+  display: none;
+  justify-content: right;
+  align-items: right;
+  gap: 5px;
+  text-shadow: #fff 1px 0 20px;
+  font-family: "RangerRegular", sans-serif;
+  font-size: 20px;
+}
