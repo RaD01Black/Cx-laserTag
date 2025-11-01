@@ -882,10 +882,10 @@
 }
 
 .RequestNotifBox {
-  width: 380px;
+  width: 420px;
   height: 90px;
   background: #000000;
-  background: linear-gradient(94deg, rgba(0, 0, 0, 0.127) -10%, rgba(0, 0, 0, 0.867) 88%);
+  background: linear-gradient(94deg, rgba(0, 0, 0, 0.447) -30%, rgb(0, 0, 0) 108%);
   overflow: hidden;
   position: relative;
   border-radius: 5px;
@@ -893,6 +893,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  z-index: 100 !important;
+  border: 1px solid #ffffff30;
 }
 
 .RequestPlayerRedLine {
@@ -940,6 +942,7 @@
   flex-direction: column;
   gap: 5px;
   margin-left: 25px;
+  margin-right: 20px;
 }
 
 .DeatailTextsRequest p:nth-of-type(1) {
@@ -957,5 +960,62 @@
 .DeatailTextsRequest p:nth-of-type(2) {
   font-family: "Roboto", sans-serif;
   font-size: 11px;
-  max-width: 200px;
+  max-width: 190px;
+}
+
+.AcceptDenidDivReq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.AcceptButtonDiv {
+  width: 85px;
+  height: 25px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  background: linear-gradient(180deg,rgba(33, 128, 254, 0) 0%, rgba(33, 128, 254, 0) 50%, rgba(0, 255, 8, 0.197) 100%);
+  border: .9px solid #153c1a76;
+  color: #0C9D61;
+  cursor: pointer;
+  transition: all ease 0.30s;
+  text-shadow: #0C9D61 1px 0 20px;
+
+}
+
+.AcceptButtonDiv:hover {
+  transform: scale(1.04);
+}
+
+.DeclineButtonDiv {
+  background: #FF1A1A;
+  background: linear-gradient(168deg,rgba(255, 26, 26, 0) 0%, rgba(255, 26, 26, 0.03) 50%, rgba(255, 26, 26, 0.2) 100%);
+  border: .9px solid #401e1ea1;
+}
+
+.DeclineButtonDiv {
+  width: 85px;
+  height: 25px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  background: #FF1A1A;
+  background: linear-gradient(168deg,rgba(255, 26, 26, 0) 0%, rgba(255, 26, 26, 0.03) 50%, rgba(255, 26, 26, 0.2) 100%);
+  border: .9px solid #401e1ea1;
+  color: #ff1a1ae8;
+  cursor: pointer;
+  transition: all ease 0.30s;
+  text-shadow: #eb0000 1px 0 20px;
+
+}
+
+.DeclineButtonDiv:hover {
+  transform: scale(1.04);
 }
