@@ -871,11 +871,33 @@
   height: fit-content;
   position: absolute;
   right: 1rem;
-  display: none;
+  top: 30%;
+  display: flex;
   justify-content: right;
   align-items: right;
   gap: 5px;
   text-shadow: #fff 1px 0 20px;
   font-family: "RangerRegular", sans-serif;
   font-size: 20px;
+}
+
+.RequestNotifBox {
+  width: 380px;
+  height: 90px;
+  background: #000000;
+  background: linear-gradient(94deg, rgba(0, 0, 0, 0.127) -10%, rgba(0, 0, 0, 0.867) 88%);
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+}
+
+.RequestPlayerRedLine {
+  height: 100%;
+  width:  2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0px;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 0px 43px 8px rgb(255, 255, 255); 
+  box-shadow: 10px 0px 43px 8px rgb(255, 255, 255);
 }
