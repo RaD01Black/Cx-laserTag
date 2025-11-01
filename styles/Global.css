@@ -883,12 +883,16 @@
 
 .RequestNotifBox {
   width: 380px;
-  height: 90px;
+  height: 110px;
   background: #000000;
   background: linear-gradient(94deg, rgba(0, 0, 0, 0.127) -10%, rgba(0, 0, 0, 0.867) 88%);
   overflow: hidden;
   position: relative;
   border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .RequestPlayerRedLine {
@@ -900,4 +904,10 @@
   border-radius: 5px;
   -webkit-box-shadow: 10px 0px 43px 8px rgb(255, 255, 255); 
   box-shadow: 10px 0px 43px 8px rgb(255, 255, 255);
+}
+
+.PlayerBoxRequestJoin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
