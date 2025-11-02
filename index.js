@@ -497,4 +497,3 @@ document.querySelectorAll('.TopKill').forEach(el => {
     el.textContent = text.substring(0,10) + '..';
   }
 });
-
