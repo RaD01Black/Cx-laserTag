@@ -1055,16 +1055,6 @@
   gap: 10px;
 }
 
-.RequestPlayerRedLine {
-  height: 100%;
-  width:  2px;
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  right: 0px;
-  border-radius: 5px;
-  -webkit-box-shadow: 10px 0px 43px 8px rgb(255, 255, 255); 
-  box-shadow: 10px 0px 43px 8px rgb(255, 255, 255);
-}
 
 .TextBottomScreenDiv img {
   width: 65px;
@@ -1098,3 +1088,25 @@ font-family: "RangerRegular", sans-serif;
 transform: translateY(6px);
 filter: drop-shadow(0 0 33px #ffffff);
 }
+
+.TextArchived {
+  font-family: "Afacad", sans-serif;
+  font-size: 12px;
+  max-width:250px;
+  text-align: left;
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 1.6rem;
+}
+
+.HeadShotBadgeArchivedRedLine {
+  height: 100%;
+  width:  2px;
+  background-color: #22cac0;
+  position: absolute;
+  left: 0px;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 0px 43px 8px #22cac0; 
+  box-shadow: 10px 0px 43px 8px #22cac0;
+}
+
