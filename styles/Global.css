@@ -1220,6 +1220,9 @@ filter: drop-shadow(0 0 33px #ffffffd0);
   z-index: 1001 !important;
   font-family: "RangerRegular", sans-serif;
 filter: drop-shadow(0 0 33px #ffffffd0);;
+display: flex;
+flex-direction: column;
+gap: 20px;
 }
 
 .TextBottomAllDiv {
