@@ -1041,16 +1041,18 @@
   width: 420px;
   height: 90px;
   background: #000000;
-  background: linear-gradient(94deg, rgba(0, 0, 0, 0.447) -30%, rgb(0, 0, 0) 108%);
+  background: linear-gradient(-94deg, rgba(0, 0, 0, 0.447) -60%, rgb(0, 0, 0) 108%);
   overflow: hidden;
   position: relative;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
   align-items: center;
   z-index: 100 !important;
   border: 1px solid #ffffff30;
+  gap: 10px;
 }
 
 .RequestPlayerRedLine {
@@ -1064,3 +1066,31 @@
   box-shadow: 10px 0px 43px 8px rgb(255, 255, 255);
 }
 
+.TextBottomScreenDiv img {
+  width: 65px;
+  position: absolute;
+  left: 20px;
+}
+
+.BadgeModalScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.BadgeModalScreen p:nth-of-type(1) {
+  -webkit-text-stroke: 1px #ffffff51;
+  font-family: "RangerRegular", sans-serif;
+  color: transparent;
+  font-size: 25px;
+  position: absolute;
+}
+
+.BadgeModalScreen p:nth-of-type(2) {
+font-size: 22px;
+position: absolute;
+font-family: "RangerRegular", sans-serif;
+transform: translateY(6px);
+filter: drop-shadow(0 0 33px #ffffff);
+}
