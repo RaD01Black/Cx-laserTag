@@ -1219,11 +1219,26 @@ filter: drop-shadow(0 0 33px #ffffffd0);
   display: flex;
   z-index: 1001 !important;
   font-family: "RangerRegular", sans-serif;
-filter: drop-shadow(0 0 33px #ffffffd0);
+filter: drop-shadow(0 0 33px #ffffffd0);;
+}
 
+.TextBottomAllDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.BottomTextLine {
+  width: 110px;
+  height: 3px;
+  background-color: #ff0000e0;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 50px 3px #ff0000e0; 
+box-shadow: 0px 0px 50px 3px #ff0000e0;
 }
 
 .NumberBottomText {
   color: #ff0000e0 ;
-
 }
