@@ -536,7 +536,7 @@
   }
 
   .GreenEndScreen {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1086,7 +1086,7 @@ font-size: 22px;
 position: absolute;
 font-family: "RangerRegular", sans-serif;
 transform: translateY(6px);
-filter: drop-shadow(0 0 33px #ffffff);
+filter: drop-shadow(0 0 33px #ffffffd0);
 }
 
 .TextArchived {
@@ -1110,3 +1110,21 @@ filter: drop-shadow(0 0 33px #ffffff);
   box-shadow: 10px 0px 43px 8px #22cac0;
 }
 
+.HeadShotColor {
+  color: #22cabfcc;
+}
+
+.PlayerBadgeArchivedRedLine {
+  height: 100%;
+  width:  2px;
+  background-color: #01dc74;
+  position: absolute;
+  left: 0px;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 0px 43px 8px #01dc74; 
+  box-shadow: 10px 0px 43px 8px #01dc74;
+}
+
+.MatchColor {
+  color: #01dc76c7;
+}
