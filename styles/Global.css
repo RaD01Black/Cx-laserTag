@@ -1021,18 +1021,30 @@
 }
 
 
+
 .TextBottomScreenDiv {
-  position: absolute;
+  width: 420px;
+  height: 90px;
+  background: #000000;
+  background: linear-gradient(94deg, rgba(0, 0, 0, 0.447) -30%, rgb(0, 0, 0) 108%);
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  bottom: 3rem;
-  font-family: 'RangerRegular',sans-serif;
-  width: 100vw;
+  z-index: 100 !important;
+  border: 1px solid #ffffff30;
 }
 
-.TextBottomScreenDiv img {
-  width: 60px;
+.RequestPlayerRedLine {
+  height: 100%;
+  width:  2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0px;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 0px 43px 8px rgb(255, 255, 255); 
+  box-shadow: 10px 0px 43px 8px rgb(255, 255, 255);
 }
-
