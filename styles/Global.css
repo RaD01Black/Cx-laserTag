@@ -1019,3 +1019,13 @@
 .DeclineButtonDiv:hover {
   transform: scale(1.04);
 }
+
+
+.TextBottomScreenDiv {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 2rem;
+}
