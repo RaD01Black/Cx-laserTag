@@ -1020,6 +1020,21 @@
   transform: scale(1.04);
 }
 
+.AllBadgesArchived {
+  flex-direction:column;
+  width:fit-content;
+  height: fit-content;
+  position: absolute;
+  left: 1rem;
+  top: 30%;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  gap: 5px;
+  text-shadow: #fff 1px 0 20px;
+  font-family: "RangerRegular", sans-serif;
+  font-size: 20px;
+}
 
 
 .TextBottomScreenDiv {
@@ -1048,3 +1063,4 @@
   -webkit-box-shadow: 10px 0px 43px 8px rgb(255, 255, 255); 
   box-shadow: 10px 0px 43px 8px rgb(255, 255, 255);
 }
+
