@@ -536,7 +536,7 @@
   }
 
   .GreenEndScreen {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1211,4 +1211,19 @@ position: absolute;
 font-family: "RangerRegular", sans-serif;
 transform: translateY(6px);
 filter: drop-shadow(0 0 33px #ffffffd0);
+}
+
+.TextKillBottom {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  z-index: 1001 !important;
+  font-family: "RangerRegular", sans-serif;
+filter: drop-shadow(0 0 33px #ffffffd0);
+
+}
+
+.NumberBottomText {
+  color: #ff0000e0 ;
+
 }
