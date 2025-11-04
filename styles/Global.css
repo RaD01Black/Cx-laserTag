@@ -1128,3 +1128,87 @@ filter: drop-shadow(0 0 33px #ffffffd0);
 .MatchColor {
   color: #01dc76c7;
 }
+
+.KillerBadgeArchivedRedLine {
+  height: 100%;
+  width:  2px;
+  background-color: #c41425;
+  position: absolute;
+  left: 0px;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 0px 43px 8px #c41425; 
+  box-shadow: 10px 0px 43px 8px #c41425;
+}
+
+.KillerColor {
+  color: #ce2f1ae0;
+}
+
+.WinnerBadgeArchivedRedLine {
+  height: 100%;
+  width:  2px;
+  background-color: #e07200;
+  position: absolute;
+  left: 0px;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 0px 43px 8px #e07200; 
+  box-shadow: 10px 0px 43px 8px #e07200;
+}
+
+.WinnerColor {
+  color: #e07200;
+}
+
+.WinnerBadgeModalScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 100vw;
+  top: 1.5rem;
+  margin-left: 12px;
+}
+
+.WinnerBadgeModalScreen p:nth-of-type(1) {
+  -webkit-text-stroke: 1px #ffffff51;
+  font-family: "RangerRegular", sans-serif;
+  color: transparent;
+  font-size: 25px;
+  position: absolute;
+}
+
+.WinnerBadgeModalScreen p:nth-of-type(2) {
+font-size: 22px;
+position: absolute;
+font-family: "RangerRegular", sans-serif;
+transform: translateY(6px);
+filter: drop-shadow(0 0 33px #ffffffd0);
+}
+
+.KillerBadgeModalScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 100vw;
+  top: 1.5rem;
+  margin-left: 27px;
+}
+
+.KillerBadgeModalScreen p:nth-of-type(1) {
+  -webkit-text-stroke: 1px #ffffff51;
+  font-family: "RangerRegular", sans-serif;
+  color: transparent;
+  font-size: 25px;
+  position: absolute;
+}
+
+.KillerBadgeModalScreen p:nth-of-type(2) {
+font-size: 22px;
+position: absolute;
+font-family: "RangerRegular", sans-serif;
+transform: translateY(6px);
+filter: drop-shadow(0 0 33px #ffffffd0);
+}
